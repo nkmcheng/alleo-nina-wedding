@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alleo &amp; Nina · Wedding Style Guide — Ocean Teal</title>
+<style>
+  :root {
+    --ground: #F8F4EA;
+    --card: #FFFDF7;
+    --ink: #33362B;
+    --ink-soft: #5C6052;
+    --line: #D9D2BE;
+    --line-strong: #B9B098;
+    --teal: #457E7C;
+    --teal-deep: #265D64;
+    --seafoam: #93BAB4;
+    --gold: #B99B5F;
+    --accent-ink: #265D64;
+    --display: "Playfair Display", "Didot", "Bodoni MT", "Cormorant Garamond", Georgia, serif;
+    --body: Georgia, "Times New Roman", serif;
+    --utility: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 1.25rem 5rem;
+  }
+  .page { max-width: 900px; margin: 0 auto; }
+
+  .hero { text-align: center; padding: 4.5rem 0 3rem; }
+  .monogram {
+    width: 92px; height: 92px; margin: 0 auto 1.5rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--display);
+    font-size: 2rem; letter-spacing: 0.05em;
+    color: var(--accent-ink);
+    position: relative;
+  }
+  .monogram::after {
+    content: ""; position: absolute; inset: 5px;
+    border: 1px solid var(--line); border-radius: 50%;
+  }
+  .eyebrow {
+    font-family: var(--utility); font-size: 0.72rem;
+    letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--ink-soft); margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 500;
+    font-size: clamp(2.4rem, 6vw, 3.6rem);
+    letter-spacing: 0.02em; margin: 0 0 1.25rem;
+    text-wrap: balance;
+  }
+  h1 .amp { font-style: italic; color: var(--accent-ink); }
+  .hero-meta {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 0.4rem 2.25rem;
+    font-family: var(--utility); font-size: 0.82rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .hero-meta span { white-space: nowrap; }
+  .locked {
+    display: inline-block; margin-top: 1.4rem;
+    font-family: var(--utility); font-size: 0.7rem;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--accent-ink);
+    border: 1px solid var(--teal); border-radius: 999px;
+    padding: 0.35rem 1.1rem;
+  }
+
+  section { margin: 4.25rem 0; }
+  .sec-head {
+    display: flex; align-items: baseline; gap: 1rem;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 0.6rem; margin-bottom: 1.75rem;
+  }
+  .sec-head h2 {
+    font-family: var(--display); font-weight: 500;
+    font-size: 1.7rem; margin: 0; letter-spacing: 0.01em;
+  }
+  .sec-head .kicker {
+    font-family: var(--utility); font-size: 0.7rem;
+    letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--ink-soft); margin-left: auto; text-align: right;
+  }
+  .lede { font-size: 1.05rem; max-width: 62ch; }
+  p { max-width: 68ch; }
+  .note { color: var(--ink-soft); font-size: 0.92rem; }
+
+  .swatch-row { display: flex; flex-wrap: wrap; gap: 1.25rem 1.75rem; margin: 1.5rem 0; }
+  .swatch { text-align: center; width: 104px; }
+  .swatch .dot {
+    width: 64px; height: 64px; border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    border: 1px solid rgba(0,0,0,0.15);
+    box-shadow: inset 0 0 0 3px var(--card);
+  }
+  .swatch .name {
+    font-family: var(--utility); font-size: 0.7rem;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--ink); display: block;
+  }
+  .swatch .role { font-size: 0.78rem; color: var(--ink-soft); font-style: italic; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    padding: 1.5rem 1.75rem;
+    margin: 1.25rem 0;
+  }
+  .card h3 {
+    font-family: var(--display); font-weight: 500;
+    font-size: 1.15rem; margin: 0 0 0.5rem;
+  }
+
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--card); }
+  table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 0.8rem 1.1rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th {
+    font-family: var(--utility); font-size: 0.68rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--ink-soft); font-weight: 600;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  tr:last-child td { border-bottom: none; }
+  td .who { font-family: var(--display); font-size: 1.02rem; }
+  .chip {
+    display: inline-block; width: 0.85em; height: 0.85em; border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.2); margin-right: 0.4em; vertical-align: -0.08em;
+  }
+
+  .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+  .two-col .card { margin: 0; }
+
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.35rem 0; max-width: 65ch; }
+  .tight li { margin: 0.2rem 0; }
+
+  .rsvp {
+    background: var(--card);
+    border: 1px solid var(--line-strong);
+    outline: 1px solid var(--line);
+    outline-offset: 5px;
+    padding: 2.5rem 2rem;
+    margin: 2.25rem 0.4rem;
+    text-align: center;
+    font-family: var(--display);
+  }
+  .rsvp .small-caps {
+    font-family: var(--utility); font-size: 0.66rem;
+    letter-spacing: 0.3em; text-transform: uppercase; color: var(--ink-soft);
+  }
+  .rsvp h3 {
+    font-size: 1.9rem; font-weight: 500; margin: 0.5rem 0 0.25rem;
+    letter-spacing: 0.06em; color: var(--accent-ink);
+  }
+  .rsvp .rule {
+    width: 56px; height: 1px; background: var(--line-strong);
+    margin: 1.1rem auto;
+  }
+  .rsvp p { max-width: 46ch; margin: 0.55rem auto; font-size: 1.02rem; }
+  .rsvp .fill { letter-spacing: 0.06em; }
+  .rsvp .blank {
+    display: inline-block; min-width: 9rem;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .rsvp .blank.short { min-width: 3.5rem; }
+  .rsvp .choices { font-size: 1.02rem; margin-top: 0.9rem; }
+  .rsvp .choices span { margin: 0 0.9rem; white-space: nowrap; }
+  .box {
+    display: inline-block; width: 0.8em; height: 0.8em;
+    border: 1px solid var(--ink-soft); vertical-align: -0.05em; margin-right: 0.35em;
+  }
+  .caption {
+    font-family: var(--utility); font-size: 0.72rem;
+    letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-soft); text-align: center; margin: -1.25rem 0 2rem;
+  }
+
+  .check li { list-style: none; position: relative; padding-left: 1.6rem; }
+  .check li::before {
+    content: ""; position: absolute; left: 0; top: 0.42em;
+    width: 0.7em; height: 0.7em;
+    border: 1px solid var(--line-strong);
+  }
+  .check li.done::before { background: var(--seafoam); border-color: var(--teal); }
+  .check li.done { color: var(--ink-soft); }
+  .check { padding-left: 0; }
+
+  footer {
+    margin-top: 5rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    text-align: center; font-family: var(--utility);
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="hero">
+    <div class="monogram">A·N</div>
+    <p class="eyebrow">Wedding Style Guide &amp; RSVP Suite</p>
+    <h1>Alleo <span class="amp">&amp;</span> Nina</h1>
+    <div class="hero-meta">
+      <span>Saturday · 06 February 2027</span>
+      <span>Ceremony 11:00 AM · Chapel on the Hill</span>
+      <span>Reception · Hillcreek Gardens Tagaytay</span>
+      <span>250 Guests</span>
+    </div>
+    <span class="locked">Motif locked · Ocean Teal · July 2026</span>
+  </header>
+
+  <!-- ================= MOTIF ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>The Motif — Ocean Teal</h2>
+      <span class="kicker">01 · Locked Palette</span>
+    </div>
+    <p class="lede">
+      Ocean teal, chosen against the venues themselves: it sings beside the terracotta and garden
+      greens of Chapel on the Hill's courtyard, and it makes Hillcreek's cream ballroom and
+      chandeliers glow. Gold carries the accents; antique gold and silver crown the principal
+      sponsors.
+    </p>
+    <div class="swatch-row">
+      <div class="swatch"><div class="dot" style="background:#265D64"></div><span class="name">Deep Teal</span><span class="role">maid of honor</span></div>
+      <div class="swatch"><div class="dot" style="background:#457E7C"></div><span class="name">Ocean Teal</span><span class="role">entourage hero</span></div>
+      <div class="swatch"><div class="dot" style="background:#93BAB4"></div><span class="name">Seafoam</span><span class="role">accents · florals</span></div>
+      <div class="swatch"><div class="dot" style="background:#B08D4F"></div><span class="name">Antique Gold</span><span class="role">ninangs · option 1</span></div>
+      <div class="swatch"><div class="dot" style="background:#99A0A8"></div><span class="name">Silver Grey</span><span class="role">ninangs · option 2</span></div>
+      <div class="swatch"><div class="dot" style="background:#EFE4CD"></div><span class="name">Ecru</span><span class="role">barong</span></div>
+      <div class="swatch"><div class="dot" style="background:#E7DCC2"></div><span class="name">Champagne</span><span class="role">the bride</span></div>
+    </div>
+    <p class="note">
+      Fabric tip: chiffon dye lots vary between suppliers. Share one physical ocean-teal swatch
+      card with the whole entourage — or have Marsha Berbon source the fabric in one batch. The
+      couple's peg photos live in the project folder (<em>design/pegs-teal/</em>).
+    </p>
+  </section>
+
+  <!-- ================= ATTIRE ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Who Wears What</h2>
+      <span class="kicker">02 · Entourage Attire</span>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <tr><th>Role</th><th>Color</th><th>Direction</th></tr>
+        <tr>
+          <td><span class="who">Bride</span></td>
+          <td>White / champagne</td>
+          <td>Two looks by Marsha Berbon: a champagne-toned <strong>off-shoulder A-line</strong> with draped tulle sleeves and beaded sweetheart bodice for the ceremony, then a <strong>strapless beaded-lace mermaid</strong> for the reception. Ivory bouquet with pale blue hydrangea and a teal ribbon.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Groom</span></td>
+          <td><span class="chip" style="background:#EFE4CD"></span>Ecru barong</td>
+          <td>Full-length piña or jusi barong with fine embroidery (Marsha Berbon), black trousers — or the mandarin-collar embroidered suit from the couple's pegs. Richer detailing than the groomsmen.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Maid / Matron of Honor</span></td>
+          <td><span class="chip" style="background:#265D64"></span>Deep teal</td>
+          <td>One shade deeper than the bridesmaids — off-shoulder draped silhouette per the peg. Bouquet slightly fuller than the bridesmaids'.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Bridesmaids</span></td>
+          <td><span class="chip" style="background:#457E7C"></span>Ocean teal</td>
+          <td>Mismatched chiffon gowns in one ocean-teal fabric family, necklines to each girl's comfort. Ivory rose posies.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Best Man &amp; Groomsmen</span></td>
+          <td><span class="chip" style="background:#EFE4CD"></span>Long-sleeve barong</td>
+          <td>Classic ecru long-sleeve barong, black slacks and shoes. Boutonnière of eucalyptus with one pale blue bloom.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Mothers of the Bride &amp; Groom</span></td>
+          <td><span class="chip" style="background:#457E7C"></span>Teal Filipiniana</td>
+          <td>Beaded teal Filipiniana with soft puff or butterfly sleeves — per the couple's peg. Same color family, different cuts so each mom feels like herself. Champagne clutch and shoes.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Fathers</span></td>
+          <td><span class="chip" style="background:#EFE4CD"></span>Barong</td>
+          <td>Long-sleeve barong, black slacks — matching the groomsmen so the ceremony stage reads unified.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Principal Sponsors — Ninangs</span></td>
+          <td><span class="chip" style="background:#B08D4F"></span><span class="chip" style="background:#99A0A8"></span>Antique gold <em>or</em> silver grey</td>
+          <td><strong>Two color options, and any style she loves</strong> — gown, formal dress, or Filipiniana. Only the color is asked; the silhouette is hers. Both colors are widely available in PH formalwear.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Principal Sponsors — Ninongs</span></td>
+          <td><span class="chip" style="background:#EFE4CD"></span>Barong</td>
+          <td>Long-sleeve barong, black slacks. Optional gold or silver pocket square to match the ninangs.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Secondary Sponsors <span class="note">(candle · veil · cord)</span></span></td>
+          <td><span class="chip" style="background:#457E7C"></span>Ocean teal / <span class="chip" style="background:#EFE4CD"></span>barong</td>
+          <td>Ladies in ocean teal (simpler cut than the bridesmaids), gentlemen in long-sleeve barong.</td>
+        </tr>
+        <tr>
+          <td><span class="who">Flower Girls &amp; Bearers</span></td>
+          <td>Ivory + teal sash</td>
+          <td>Ivory dresses with ocean-teal ribbon sashes; little bearers in mini barong. Petals in ivory and pale blue.</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ================= GUESTS ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Guest Dress Code — Smart Casual</h2>
+      <span class="kicker">03 · For the Invitation</span>
+    </div>
+    <p class="lede">
+      Think polished, not stiff. <strong>Ladies:</strong> a dress is lovely but not required — a
+      dressy top with a skirt or trousers is just as perfect (no plain tees).
+      <strong>Gentlemen:</strong> barong, long or short sleeve, or a polo shirt with trousers —
+      <strong>no suit needed</strong>.
+    </p>
+    <div class="two-col">
+      <div class="card">
+        <h3>Please wear — warm neutrals</h3>
+        <div class="swatch-row" style="margin:1rem 0 0.5rem;">
+          <div class="swatch"><div class="dot" style="background:#B8A794"></div><span class="name">Taupe</span></div>
+          <div class="swatch"><div class="dot" style="background:#C9A29B"></div><span class="name">Dusty Rose</span></div>
+          <div class="swatch"><div class="dot" style="background:#B4715A"></div><span class="name">Terracotta</span></div>
+          <div class="swatch"><div class="dot" style="background:#8A6F5E"></div><span class="name">Mocha</span></div>
+          <div class="swatch"><div class="dot" style="background:#A9A49A"></div><span class="name">Warm Grey</span></div>
+        </div>
+        <p class="note">Ladies: dresses, or dressy top + skirt / trousers / jumpsuit. Gentlemen: barong (long or short sleeve) or polo with trousers.</p>
+      </div>
+      <div class="card">
+        <h3>Kindly avoid</h3>
+        <ul class="tight">
+          <li>White, ivory &amp; champagne — reserved for the bride (both her gowns are champagne-toned)</li>
+          <li>Teals, blues &amp; greens — the entourage</li>
+          <li>Antique gold &amp; silver — the principal sponsors</li>
+          <li>Plain t-shirts and jeans (too casual) · suits (more than needed)</li>
+        </ul>
+        <p class="note">Suggested invitation wording: <em>“Smart casual attire in warm neutral tones — taupe, dusty rose, terracotta, mocha, or warm grey. Kindly reserve white, champagne, teals, gold, and silver for the bridal party.”</em></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FLOWERS & TABLES ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Flowers &amp; Tables</h2>
+      <span class="kicker">04 · Ceremony &amp; Reception Styling</span>
+    </div>
+
+    <div class="card">
+      <h3>The February advantage — and one warning</h3>
+      <p class="note">
+        Early February is peak dry season: Baguio-supplied blooms are abundant and Tagaytay is at
+        its coolest. But the date is <strong>one week before Valentine's</strong>, when flower
+        prices surge — book the florist early and lock a priced flower list, with quantities and
+        varieties fixed regardless of Valentine's market prices.
+      </p>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>The teal floral recipe</h3>
+        <ul class="tight">
+          <li><strong>Ivory heroes:</strong> ivory roses, casablanca lilies (fragrant — for the chapel), white chrysanthemums, baby's breath, white carnations</li>
+          <li><strong>Blue accents:</strong> pale blue hydrangea, misty blue limonium, steel-blue eryngium thistle</li>
+          <li><strong>Greenery:</strong> silver-dollar eucalyptus, italian ruscus, ferns</li>
+          <li><strong>The teal itself:</strong> true teal blooms don't exist — the color lives in ribbons, runners, napkins, candles, and stationery</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Chapel on the Hill — keep it light</h3>
+        <ul class="tight">
+          <li>An octagonal garden chapel — terracotta roof, open verandas, brick path — it barely needs décor</li>
+          <li>Baby's-breath + eucalyptus clusters on aisle stands</li>
+          <li>Two ivory arrangements flanking the altar; ivory and pale-blue petals for the flower girls</li>
+          <li>Skip drapery and arches — save the budget for the reception</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Hillcreek reception — simple, as planned</h3>
+      <ul class="tight">
+        <li><strong>No ceiling treatment, no trusses</strong> — the Grand Ballroom's chandeliers and arched windows carry the room</li>
+        <li><strong>Linens:</strong> ivory base cloths with <span style="white-space:nowrap;"><span class="chip" style="background:#457E7C"></span>ocean-teal runners and napkins</span>, gold-rimmed plates and votives</li>
+        <li><strong>Centerpieces:</strong> low ivory arrangements with hydrangea and eucalyptus, 2–3 candle votives — kept low for a lunch crowd</li>
+        <li><strong>Backdrop:</strong> white panels with ivory blooms, greenery, and teal ribbon behind the couple's table; warm-white uplighting from Artuz (no colored uplights against the walls)</li>
+        <li><strong>Hero tables:</strong> spend on the couple's table, cake table, and entrance arrangement; guest tables go carnation-and-mum heavy — at 25 tables the savings are real</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Cocktail hour — the garden lawn</h3>
+      <p class="note">
+        On Hillcreek's balustraded sunken lawn while the couple takes portraits, ringed by the
+        booths: Massage Pop-Up Lounge · Coffee &amp; Matcha Bar · Street Food &amp; Kakanin ·
+        Donut Wall · Tequila Shot Wall · Shakes — Spiked &amp; Sweet · Dimsum Bar · Fortune Cookie
+        Wall · DIY Brick Keychains · Photo Booth &amp; Prints · Pizza Corner. Cocktail tables in
+        ivory with teal runners; string lights between the trees. Acsions band plays the wedding
+        march and reception sets.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= RSVP ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>The RSVP Suite</h2>
+      <span class="kicker">05 · Digital + Print</span>
+    </div>
+    <p class="lede">
+      RSVPs run through the wedding website: every party receives a <strong>personal invitation
+      link</strong> that greets them by name, shows their reserved seats, and caps their
+      headcount — only the response and number attending are editable. The printed cards below
+      are the companion for guests who prefer paper.
+    </p>
+
+    <div class="rsvp">
+      <span class="small-caps">Kindly Respond</span>
+      <h3>RSVP</h3>
+      <div class="rule"></div>
+      <p>Please reply by January 6, 2027</p>
+      <p class="fill" style="margin-top:1.4rem;">Name &nbsp;<span class="blank"></span></p>
+      <p class="fill">We have reserved <span class="blank short"></span> seat(s) in your honor</p>
+      <div class="choices">
+        <span><span class="box"></span>Joyfully accepts</span>
+        <span><span class="box"></span>Regretfully declines</span>
+      </div>
+      <p class="fill">Number attending &nbsp;<span class="blank short"></span></p>
+      <div class="rule"></div>
+      <p class="small-caps">Respond via your invitation link, or message 09XX·XXX·XXXX</p>
+    </div>
+    <p class="caption">Card 1 · Guest RSVP — matches the website's white-and-teal card</p>
+
+    <div class="rsvp">
+      <span class="small-caps">To Our Beloved Ninong &amp; Ninang</span>
+      <h3>An Invitation to Stand as Principal Sponsor</h3>
+      <div class="rule"></div>
+      <p style="font-style:italic;">
+        With full hearts, we ask you to stand as witnesses to our vows and walk beside us
+        as our principal sponsors — a role we could imagine no one else filling.
+      </p>
+      <p>Ceremony at eleven o'clock in the morning · Chapel on the Hill, Tagaytay<br>
+      Reception to follow at Hillcreek Gardens</p>
+      <p class="note" style="font-family: var(--utility); font-size: 0.8rem;">
+        Ninangs: antique gold or silver grey — any style you love &nbsp;·&nbsp; Ninongs: long-sleeve barong, black slacks
+      </p>
+      <div class="choices">
+        <span><span class="box"></span>Honored to accept</span>
+        <span><span class="box"></span>Unable to attend</span>
+      </div>
+      <div class="rule"></div>
+      <p class="small-caps">Kindly respond by January 6, 2027</p>
+    </div>
+    <p class="caption">Card 2 · Principal Sponsors</p>
+
+    <div class="rsvp">
+      <span class="small-caps">To Our Dear Friends</span>
+      <h3>Candle · Veil · Cord</h3>
+      <div class="rule"></div>
+      <p style="font-style:italic;">
+        We would be honored to have you take part in our ceremony as our
+        <span class="blank" style="min-width:7rem;"></span> sponsor.
+      </p>
+      <p class="note" style="font-family: var(--utility); font-size: 0.8rem;">
+        Ladies: ocean teal formal &nbsp;·&nbsp; Gentlemen: long-sleeve barong
+      </p>
+      <div class="choices">
+        <span><span class="box"></span>With pleasure</span>
+        <span><span class="box"></span>Sending love from afar</span>
+      </div>
+      <div class="rule"></div>
+      <p class="small-caps">Kindly respond by January 6, 2027</p>
+    </div>
+    <p class="caption">Card 3 · Secondary Sponsors</p>
+
+    <div class="rsvp">
+      <span class="small-caps">To Our Dearest</span>
+      <h3>Will You Stand With Us?</h3>
+      <div class="rule"></div>
+      <p style="font-style:italic;">
+        Of everyone we know, we choose you. We would be honored to have you beside us
+        as our <span class="blank" style="min-width:9rem;"></span> on the day we say “I do.”
+      </p>
+      <p>Saturday, 06 February 2027 · Tagaytay</p>
+      <p class="note" style="font-family: var(--utility); font-size: 0.8rem;">
+        Ladies: ocean-teal chiffon, your own silhouette &nbsp;·&nbsp; Gentlemen: long-sleeve ecru barong, black slacks
+      </p>
+      <div class="choices">
+        <span><span class="box"></span>I'm all yours</span>
+        <span><span class="box"></span>Sending love from afar</span>
+      </div>
+      <div class="rule"></div>
+      <p class="small-caps">Fittings with Marsha Berbon to follow · details from Nina &amp; Leo</p>
+    </div>
+    <p class="caption">Card 4 · The Entourage — bridesmaid &amp; groomsman proposal card, sent earliest of all</p>
+
+    <div class="card">
+      <h3>Who receives what</h3>
+      <ul class="tight">
+        <li><strong>Entourage</strong> — proposal card (Card 4) as early as possible, so fittings can start; their names later appear on the main invitation's entourage insert. No RSVP needed — a yes to Card 4 is the RSVP.</li>
+        <li><strong>Principal sponsors</strong> — Card 2, sent before general invitations; their names traditionally print on the main invitation.</li>
+        <li><strong>Secondary sponsors</strong> — Card 3, alongside the principal sponsors' wave.</li>
+        <li><strong>Guests</strong> — main invitation + Card 1 + their personal website link (auto-filled name and reserved seats).</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>The hashtag</h3>
+      <ul class="tight">
+        <li><strong>#NINAkawAngPusoNiLEO</strong> — <em>ninakaw ang puso ni Leo</em> — the chosen one!</li>
+        <li>Alternates in reserve: #LEOvesNINA · #NinaSaidYesFinalLEO · #NinaTamedHerLEO</li>
+      </ul>
+      <p class="note">Alleo introduces himself as Leo, and every option features both names.</p>
+    </div>
+
+    <div class="card">
+      <h3>Staying the night</h3>
+      <p class="note">
+        Hillcreek has rooms on the estate — guests get a discounted rate by mentioning the
+        wedding (final percentage to confirm: 10–15%). Guests who prefer their own space are
+        pointed to Airbnbs near the venue from the website.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= NEXT STEPS ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>Decisions &amp; To-Dos</h2>
+      <span class="kicker">06 · Checklist</span>
+    </div>
+    <ul class="check">
+      <li class="done">Motif locked: Ocean Teal, with antique gold &amp; silver for principal sponsors</li>
+      <li class="done">Bride's two looks decided with Marsha Berbon (champagne A-line + beaded mermaid)</li>
+      <li class="done">Guest dress code set: smart casual, warm neutrals, no suits</li>
+      <li class="done">Wedding website built, with personalized RSVP links and venue map</li>
+      <li>Distribute one reference ocean-teal fabric swatch to the entourage and mothers</li>
+      <li>Confirm Hillcreek's room-discount percentage (10–15%) and preferred booking channel</li>
+      <li>Book the florist with a locked, Valentine's-proof price list (target: before Q4 2026)</li>
+      <li>Finalize the 250-guest list; enter every party + reserved seats into the website's guest file</li>
+      <li>Set up the real RSVP inbox and contact number, then print cards + send links</li>
+      <li>Send principal-sponsor invitations first — ninongs and ninangs get the earliest notice</li>
+      <li>Book the photo booth supplier (on the cocktail-hour list; not yet booked)</li>
+      <li>Brief Artuz 101 on warm-white uplighting for the ballroom</li>
+    </ul>
+  </section>
+
+  <footer>
+    Alleo &amp; Nina · 06 · 02 · 2027 · Tagaytay · #NINAkawAngPusoNiLEO
+  </footer>
+
+</div>
+</body>
+</html>

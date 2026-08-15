@@ -1,0 +1,125 @@
+- generic [ref=e2]:
+  - navigation [ref=e3]:
+    - link "Back to top" [ref=e4] [cursor=pointer]:
+      - /url: "#home"
+      - text: A·N
+    - generic [ref=e5]:
+      - link "The Day" [ref=e6] [cursor=pointer]:
+        - /url: "#details"
+      - link "Venues" [ref=e7] [cursor=pointer]:
+        - /url: "#venues"
+  - banner [ref=e8]:
+    - generic [ref=e9]:
+      - paragraph [ref=e10]: Together with their families
+      - heading "Alleo & Nina" [level=1] [ref=e11]
+      - paragraph [ref=e12]: are getting married in the Tagaytay hills
+      - generic [ref=e15]: Saturday · 06 February 2027
+      - generic "Countdown to the wedding" [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: "174"
+          - generic [ref=e20]: Days
+        - generic [ref=e21]:
+          - generic [ref=e22]: "13"
+          - generic [ref=e23]: Hours
+        - generic [ref=e24]:
+          - generic [ref=e25]: "40"
+          - generic [ref=e26]: Minutes
+        - generic [ref=e27]:
+          - generic [ref=e28]: "29"
+          - generic [ref=e29]: Seconds
+    - link "Scroll ↓" [ref=e30] [cursor=pointer]:
+      - /url: "#details"
+  - generic [ref=e32]:
+    - paragraph [ref=e33]: The Celebration
+    - heading "One day, two beautiful places" [level=2] [ref=e34]
+    - img [ref=e36]
+    - generic [ref=e38]:
+      - generic [ref=e39]:
+        - paragraph [ref=e40]: Eleven o'clock in the morning
+        - heading "The Ceremony" [level=3] [ref=e41]
+        - paragraph [ref=e42]:
+          - text: Chapel on the Hill
+          - text: Tagaytay City
+          - text: Kindly be seated by 10:30 AM — the chapel doors open to morning mist and pine.
+      - generic [ref=e43]:
+        - paragraph [ref=e44]: Lunch to follow
+        - heading "The Reception" [level=3] [ref=e45]
+        - paragraph [ref=e46]:
+          - text: Hillcreek Gardens
+          - text: Tagaytay City
+          - text: A garden lunch among the murals and arched windows, with music by Acsions.
+      - generic [ref=e47]:
+        - paragraph [ref=e48]: Two hundred fifty dear guests
+        - heading "The Company" [level=3] [ref=e49]
+        - paragraph [ref=e50]: Our families, our ninongs and ninangs, and the friends who carried us here — you.
+  - generic [ref=e52]:
+    - paragraph [ref=e53]: Where
+    - heading "The Venues" [level=2] [ref=e54]
+    - img [ref=e56]
+    - generic [ref=e58]:
+      - img "Watercolor illustration of Chapel on the Hill, an octagonal wooden chapel among pines" [ref=e60]
+      - generic [ref=e61]:
+        - paragraph [ref=e62]: Ceremony · 11:00 AM
+        - heading "Chapel on the Hill" [level=3] [ref=e63]
+        - paragraph [ref=e64]: A beloved octagonal chapel in a quiet garden courtyard — terracotta roof, open verandas, and a brick path to its doors. Mornings here are cool and misty; bring a light wrap.
+        - link "Open in Maps" [ref=e65] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/Chapel+on+the+Hill+Tagaytay
+    - generic [ref=e66]:
+      - img "Watercolor illustration of the Hillcreek Gardens reception hall with teal mural walls" [ref=e68]
+      - generic [ref=e69]:
+        - paragraph [ref=e70]: Reception · Lunch
+        - heading "Hillcreek Gardens Tagaytay" [level=3] [ref=e71]
+        - paragraph [ref=e72]: A garden estate of arched windows, painted murals, and chandeliers — ten minutes from the chapel. Lunch, toasts, and dancing follow the ceremony.
+        - link "Open in Maps" [ref=e73] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/Hillcreek+Gardens+Tagaytay
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - 'img "Illustrated watercolor map: a winding teal road from Chapel on the Hill to Hillcreek Gardens, with Taal lake in the corner" [ref=e76]'
+        - generic [ref=e77]: Chapel on the Hill
+        - generic [ref=e79]: Hillcreek Gardens
+      - paragraph [ref=e81]: From “I do” to the first dance — 8.6 km, about 13 minutes of scenic drive
+    - generic [ref=e82]:
+      - paragraph [ref=e83]: Staying the night?
+      - heading "Stay where the celebration is" [level=3] [ref=e84]
+      - paragraph [ref=e85]:
+        - strong [ref=e86]: Hillcreek Gardens has rooms right on the estate
+        - text: — wake up steps from the reception, with the gardens to yourselves in the morning. Our guests enjoy a
+        - strong [ref=e87]: discounted rate
+        - text: ; just mention the Alleo & Nina wedding when you book. Prefer your own space? There are lovely Airbnbs minutes away.
+      - generic [ref=e88]:
+        - link "Book a Room at Hillcreek" [ref=e89] [cursor=pointer]:
+          - /url: https://www.google.com/maps/search/Hillcreek+Gardens+Tagaytay
+        - link "Browse Airbnbs Nearby" [ref=e90] [cursor=pointer]:
+          - /url: https://www.airbnb.com/s/Hillcreek-Gardens-Tagaytay--Alfonso--Cavite--Philippines/homes
+  - generic [ref=e92]:
+    - paragraph [ref=e93]: Still in the works
+    - heading "A few things we’re saving for later" [level=2] [ref=e94]
+    - img [ref=e96]
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - paragraph [ref=e100]: To be announced
+        - heading "Theme & Colors" [level=3] [ref=e101]
+        - paragraph [ref=e102]: Our motif, palette, and flowers — revealed once we lock them in with our coordinator and stylists.
+      - generic [ref=e103]:
+        - paragraph [ref=e104]: To be announced
+        - heading "Cocktail Hour Delights" [level=3] [ref=e105]
+        - paragraph [ref=e106]: Little surprises waiting between the ceremony and lunch. We’re keeping these under wraps for now.
+      - generic [ref=e107]:
+        - paragraph [ref=e108]: To be announced
+        - heading "What to Wear" [level=3] [ref=e109]
+        - paragraph [ref=e110]: A guest dress guide with colors and inspiration — coming after our fittings with the dress maker.
+      - generic [ref=e111]:
+        - paragraph [ref=e112]: To be announced
+        - heading "The Entourage" [level=3] [ref=e113]
+        - paragraph [ref=e114]: The dear ones standing with us — names and roles to follow.
+      - generic [ref=e115]:
+        - paragraph [ref=e116]: To be announced
+        - heading "RSVP" [level=3] [ref=e117]
+        - paragraph [ref=e118]: Invitations with your personal RSVP link are on their way — please wait for ours before replying.
+    - paragraph [ref=e119]:
+      - text: We’re finalizing these with our coordinator, dress maker, and stylists —
+      - text: check back soon.
+  - contentinfo [ref=e120]:
+    - generic [ref=e121]: A·N
+    - paragraph [ref=e122]: Alleo & Nina · Once and for all
+    - paragraph [ref=e123]: 06 · 02 · 2027 — Tagaytay, Philippines

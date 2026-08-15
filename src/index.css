@@ -417,6 +417,22 @@ h2 {
   transform: translateY(-3px);
 }
 
+/* ---------- Coming soon (launch phase) ---------- */
+.tba-card::before {
+  border-style: dashed;
+}
+.tba-card h3 {
+  font-style: italic;
+}
+.tba-foot {
+  text-align: center;
+  margin-top: 2.4rem;
+  color: var(--ink-soft);
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.05rem;
+}
+
 /* ---------- Venues ---------- */
 .venue {
   display: grid;

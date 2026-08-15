@@ -1,6 +1,7 @@
 import Reveal from './Reveal.jsx'
 import Flourish from './Flourish.jsx'
 import cocktailImg from '../assets/cocktail-garden-teal.jpg'
+import { ANNOUNCED } from '../siteConfig.js'
 
 const DELIGHTS = [
   'Massage Pop-Up Lounge',
@@ -54,24 +55,28 @@ export default function Details() {
             <p>Our families, our ninongs and ninangs, and the friends who carried us here — you.</p>
           </Reveal>
         </div>
-        <Reveal className="delights">
-          <h3>Cocktail hour — little delights waiting for you</h3>
-          <div className="delight-row">
-            {DELIGHTS.map((d) => (
-              <span className="delight" key={d}>
-                {d}
-              </span>
-            ))}
-          </div>
-        </Reveal>
-        <Reveal className="attire-board cocktail-board">
-          <img
-            src={cocktailImg}
-            alt="Watercolor of Hillcreek's sunken garden lawn dressed for cocktail hour — ivory booths, cocktail tables with teal runners, and string lights between the trees"
-            loading="lazy"
-          />
-          <p className="board-caption">The garden lawn at Hillcreek, dressed for cocktail hour</p>
-        </Reveal>
+        {ANNOUNCED.delights && (
+          <>
+            <Reveal className="delights">
+              <h3>Cocktail hour — little delights waiting for you</h3>
+              <div className="delight-row">
+                {DELIGHTS.map((d) => (
+                  <span className="delight" key={d}>
+                    {d}
+                  </span>
+                ))}
+              </div>
+            </Reveal>
+            <Reveal className="attire-board cocktail-board">
+              <img
+                src={cocktailImg}
+                alt="Watercolor of Hillcreek's sunken garden lawn dressed for cocktail hour — ivory booths, cocktail tables with teal runners, and string lights between the trees"
+                loading="lazy"
+              />
+              <p className="board-caption">The garden lawn at Hillcreek, dressed for cocktail hour</p>
+            </Reveal>
+          </>
+        )}
       </div>
     </section>
   )

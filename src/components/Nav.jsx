@@ -1,13 +1,14 @@
 import { useEffect, useState } from 'react'
+import { ANNOUNCED } from '../siteConfig.js'
 
 const LINKS = [
   { href: '#details', label: 'The Day' },
   { href: '#venues', label: 'Venues' },
-  { href: '#flowers', label: 'Flowers' },
-  { href: '#attire', label: 'Attire' },
-  { href: '#entourage', label: 'Entourage' },
-  { href: '#rsvp', label: 'RSVP' },
-]
+  { href: '#flowers', label: 'Flowers', flag: 'theme' },
+  { href: '#attire', label: 'Attire', flag: 'attire' },
+  { href: '#entourage', label: 'Entourage', flag: 'entourage' },
+  { href: '#rsvp', label: 'RSVP', flag: 'rsvp' },
+].filter((l) => !l.flag || ANNOUNCED[l.flag])
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)

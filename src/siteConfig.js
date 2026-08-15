@@ -15,26 +15,21 @@ export const ANNOUNCED = {
   rsvp: false, // opens once invitations with personal links go out
 }
 
-/* Cards shown in the Coming Soon section, in page order. Each disappears
-   automatically once its flag above turns true. */
+/* Cards shown in the Coming Soon section, in page order. A card stays up
+   while any of its keys is still false, and disappears once all are true. */
 export const COMING_SOON = [
   {
-    key: 'theme',
-    title: 'Theme & Colors',
-    note: 'Our motif, palette, and flowers — revealed once we lock them in with our coordinator and stylists.',
+    keys: ['theme', 'attire'],
+    title: 'Theme & What to Wear',
+    note: 'Our motif, palette, and flowers — with a guest dress guide to match — revealed once we lock them in with our coordinator, stylists, and dress maker.',
   },
   {
-    key: 'attire',
-    title: 'What to Wear',
-    note: 'A guest dress guide with colors and inspiration — coming after our fittings with the dress maker.',
-  },
-  {
-    key: 'entourage',
+    keys: ['entourage'],
     title: 'The Entourage',
     note: 'The dear ones standing with us — names and roles to follow.',
   },
   {
-    key: 'rsvp',
+    keys: ['rsvp'],
     title: 'RSVP',
     note: 'Invitations with your personal RSVP link are on their way — please wait for ours before replying.',
   },

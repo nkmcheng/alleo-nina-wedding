@@ -3,7 +3,7 @@ import Flourish from './Flourish.jsx'
 import { ANNOUNCED, COMING_SOON } from '../siteConfig.js'
 
 export default function ComingSoon() {
-  const pending = COMING_SOON.filter((item) => !ANNOUNCED[item.key])
+  const pending = COMING_SOON.filter((item) => item.keys.some((k) => !ANNOUNCED[k]))
   if (pending.length === 0) return null
 
   return (
@@ -14,7 +14,7 @@ export default function ComingSoon() {
         <Flourish />
         <div className="detail-grid">
           {pending.map((item, i) => (
-            <Reveal className="detail-card tba-card" key={item.key} delay={Math.min(i + 1, 3)}>
+            <Reveal className="detail-card tba-card" key={item.title} delay={Math.min(i + 1, 3)}>
               <p className="detail-when">To be announced</p>
               <h3>{item.title}</h3>
               <p>{item.note}</p>

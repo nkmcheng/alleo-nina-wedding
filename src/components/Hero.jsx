@@ -1,5 +1,5 @@
 import useCountdown from '../hooks/useCountdown.js'
-import heroImg from '../assets/hero.jpg'
+import heroImg from '../assets/hero-teal.jpg'
 
 const WEDDING_ISO = '2027-02-06T11:00:00+08:00'
 

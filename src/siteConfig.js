@@ -8,8 +8,7 @@
    its card drops out of the Coming Soon list. Nothing else to touch. */
 
 export const ANNOUNCED = {
-  theme: false, // motif, colors & flowers — hero art and petals stay neutral until true
-  delights: false, // cocktail-hour delights list + garden board in The Celebration
+  theme: false, // motif, colors & flowers — petals stay neutral until true; also the cocktail-lawn board
   attire: false, // what to wear — waiting on the dress maker & stylists
   entourage: false, // roles & names
   gallery: false, // the ceremony/reception look portraits (reveals the gowns)
@@ -23,11 +22,6 @@ export const COMING_SOON = [
     key: 'theme',
     title: 'Theme & Colors',
     note: 'Our motif, palette, and flowers — revealed once we lock them in with our coordinator and stylists.',
-  },
-  {
-    key: 'delights',
-    title: 'Cocktail Hour Delights',
-    note: 'Little surprises waiting between the ceremony and lunch. We’re keeping these under wraps for now.',
   },
   {
     key: 'attire',

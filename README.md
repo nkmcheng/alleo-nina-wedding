@@ -34,7 +34,7 @@ Locked July 2026. Deep `#265D64` (maid of honor) · medium ocean teal `#457E7C` 
 
 ## Project extras
 
-- `public/style-guide.html` — the full wedding style guide & RSVP wording suite (motif, entourage attire, florals, printable RSVP card wording). Served at `/style-guide.html` in dev and production; also opens directly in a browser.
+- `design/style-guide.html` — the full wedding style guide & RSVP wording suite (motif, entourage attire, florals, cocktail-hour delights, printable RSVP card wording). Kept out of `public/` on purpose so it is never deployed — open it directly in a browser.
 - `design/art-source/` — original full-resolution Codex-generated watercolor PNGs (the site uses optimized JPEGs from `src/assets/`).
 
 ## Design notes

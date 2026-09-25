@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .playwright-cli/
+
+# Personal reference photos of the entourage — never commit
+design/references/
+design/entourage-renders/

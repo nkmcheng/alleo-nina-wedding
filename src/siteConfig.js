@@ -9,24 +9,21 @@
 
 export const ANNOUNCED = {
   theme: false, // motif, colors & flowers — petals stay neutral until true; also the cocktail-lawn board
-  attire: false, // what to wear — waiting on the dress maker & stylists
-  entourage: false, // roles & names
+  attire: true, // what to wear — published Sep 2026
+  entourage: true, // entourage colors — published Sep 2026
   gallery: false, // the ceremony/reception look portraits (reveals the gowns)
   rsvp: false, // opens once invitations with personal links go out
 }
 
 /* Cards shown in the Coming Soon section, in page order. A card stays up
-   while any of its keys is still false, and disappears once all are true. */
+   while any of its keys is still false, and disappears once all are true.
+   Only things guests act on get a card — the motif, flowers, and entourage
+   can appear whenever they're ready without being teased here. */
 export const COMING_SOON = [
   {
-    keys: ['theme', 'attire'],
-    title: 'Theme & What to Wear',
-    note: 'Our motif, palette, and flowers — with a guest dress guide to match — revealed once we lock them in with our coordinator, stylists, and dress maker.',
-  },
-  {
-    keys: ['entourage'],
-    title: 'The Entourage',
-    note: 'The dear ones standing with us — names and roles to follow.',
+    keys: ['attire'],
+    title: 'What to Wear',
+    note: 'A simple guest dress guide, with sample outfits and colors — coming soon.',
   },
   {
     keys: ['rsvp'],

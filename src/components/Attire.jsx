@@ -1,53 +1,56 @@
 import Reveal from './Reveal.jsx'
 import Flourish from './Flourish.jsx'
-import ladiesImg from '../assets/guests-ladies.jpg'
-import gentsImg from '../assets/guests-gentlemen.jpg'
-import separatesImg from '../assets/guests-separates-teal.jpg'
+import ladiesImg from '../assets/guests-ladies-garden.jpg'
+import gentsImg from '../assets/guests-gents-garden.jpg'
+import couplesImg from '../assets/guests-couples-garden.jpg'
 
-/* Guest swatches come from the selected motif (src/theme.js) so they always
-   stay clear of that motif's entourage family, the bride's champagne, and
-   the ninangs' maroon. */
+/* Garden dressy casual. Kept deliberately short — the boards do the
+   explaining. The palette is a suggestion; the only firm ask is no bridal white. */
 export default function Attire({ motif }) {
+  const colors = motif.guestGroups?.flatMap((g) => g.colors) ?? motif.guests
+
   return (
     <section id="attire">
       <div className="wrap">
         <Reveal as="p" className="sec-label">What to Wear</Reveal>
-        <Reveal as="h2">Guest Attire — Smart Casual, Warm Neutrals</Reveal>
+        <Reveal as="h2">Garden Dressy Casual</Reveal>
         <Flourish />
         <Reveal as="p" className="center-lede">
-          Think polished, not stiff. <strong>Ladies:</strong> a dress is lovely but not required —
-          a dressy top with a skirt or trousers is just as perfect (no plain tees, please).{' '}
-          <strong>Gentlemen:</strong> barong — long or short sleeve — or a polo shirt with
-          trousers. No suit needed; Tagaytay mornings are for being comfortable.
+          Come looking your best — polished and put-together, but no suits or gowns needed.
         </Reveal>
-        <div className="attire-boards three">
-          <Reveal className="attire-board" delay={1} key={`ladies-${motif.key}`}>
+
+        <div className="attire-boards">
+          <Reveal className="attire-board" delay={1}>
             <img
-              src={motif.art?.guestsLadies ?? ladiesImg}
-              alt="Watercolor style board: four guest dresses in warm muted tones"
+              src={ladiesImg}
+              alt="Watercolor style board: five women in a knee-length dress, blouse with trousers, tea-length dress, jumpsuit, and blouse with midi skirt"
               loading="lazy"
             />
-            <p className="board-caption">Ladies — dresses, long or midi</p>
+            <p className="board-caption">Ladies</p>
           </Reveal>
           <Reveal className="attire-board" delay={2}>
             <img
-              src={separatesImg}
-              alt="Watercolor style board: smart-casual separates — dressy tops with skirts, trousers, and a jumpsuit"
-              loading="lazy"
-            />
-            <p className="board-caption">Ladies — dressy top + skirt or trousers</p>
-          </Reveal>
-          <Reveal className="attire-board" delay={3}>
-            <img
               src={gentsImg}
-              alt="Watercolor style board: guest looks for men — long-sleeve barong, short-sleeve barong, and polo with chinos"
+              alt="Watercolor style board: four men in a knit polo with chinos, linen shirt, short-sleeve barong, and rolled-sleeve shirt with sneakers"
               loading="lazy"
             />
-            <p className="board-caption">Gentlemen — barong or polo, no suit</p>
+            <p className="board-caption">Gentlemen</p>
           </Reveal>
         </div>
-        <Reveal className="swatches" key={motif.key}>
-          {motif.guests.map((s) => (
+
+        <Reveal className="attire-board couples-board">
+          <img
+            src={couplesImg}
+            alt="Watercolor style board: three guest couples — short-sleeve shirt with a knee-length dress, knit polo with a midi wrap dress, and a barong with a blouse and midi skirt"
+            loading="lazy"
+          />
+          <p className="board-caption">Guest looks</p>
+        </Reveal>
+
+        <Reveal as="h3" className="attire-sub">Suggested colors</Reveal>
+        <Reveal as="p" className="palette-note">Optional — wear what you love.</Reveal>
+        <Reveal className="swatches palette" key={motif.key}>
+          {colors.map((s) => (
             <div className="sw" key={s.name}>
               <div className="dot" style={{ background: s.hex }} />
               <span>{s.name}</span>
@@ -55,19 +58,7 @@ export default function Attire({ motif }) {
           ))}
         </Reveal>
         <Reveal as="p" className="avoid-note">
-          {motif.key === 'maroon' ? (
-            <>
-              Kindly reserve <strong>white, ivory &amp; champagne</strong> for the bride, and{' '}
-              <strong>maroons &amp; burgundies</strong> for the entourage and our principal
-              sponsors.
-            </>
-          ) : (
-            <>
-              Kindly reserve <strong>white, ivory &amp; champagne</strong> for the bride,{' '}
-              <strong>{motif.family}</strong> for the entourage, and{' '}
-              <strong>antique gold &amp; silver</strong> for our principal sponsors.
-            </>
-          )}
+          Please avoid <strong>white, ivory, cream &amp; champagne</strong> — those are for the bride.
         </Reveal>
       </div>
     </section>

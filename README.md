@@ -12,18 +12,16 @@ npm run dev      # local dev server
 npm run build    # production build in dist/
 ```
 
-## Personalized invitations
+## Personalized invitations & RSVP
 
-Each party gets its own link: `https://your-site.com/?inv=<code>`. Codes live in `src/guests.js` with the party's names and reserved seats — the RSVP form greets them by name, pre-fills it, and caps "number attending" at their reservation. A link without a valid code falls back to the generic form.
+The guest list and replies live in a Google Sheet owned by the couple, not in this repo. Each invitation gets its own link, `…/?inv=<code>#rsvp`, which opens the RSVP section at the bottom of the main page (`…/rsvp/?inv=<code>` links are redirected there by `rsvp/index.html`). The RSVP card looks the code up through the sheet's Apps Script web app (`rsvp-sheet/Code.gs`), greets the party by name, offers a name field for each additional guest they may bring, and writes the reply back to their row. Replying again updates the same row; the Log tab keeps every submission.
 
-- Add every party to `src/guests.js` (the three entries there are samples)
-- Print all links for sending: `node scripts/print-invite-links.mjs https://your-site.com`
-- Codes are visible in shared links — keep them unguessable (a couple of random characters at the end)
+- One-time setup and day-to-day use: `rsvp-sheet/SETUP.md`
+- The web-app URL goes in `RSVP_ENDPOINT` (`src/siteConfig.js`); flip `ANNOUNCED.rsvp` to show the RSVP section and menu link
 
 ## Before going live
 
-- **Guest list** — replace the sample entries in `src/guests.js` with the real 250-guest list.
-- **RSVP inbox** — `src/components/Rsvp.jsx` sends responses via `mailto:` to a placeholder address (`RSVP_EMAIL`). Replace it with the real wedding inbox, or swap the form for a Google Form link. Also replace the placeholder contact number (`RSVP_PHONE`).
+- **RSVP contact number** — replace the placeholder `RSVP_PHONE` in `src/components/Rsvp.jsx`.
 - **Hillcreek stay discount** — the stay card in `src/components/Venues.jsx` says "discounted rate" without a number; once Hillcreek confirms (10% or 15%), put the figure in the copy. Also confirm their preferred booking link (currently the Google Maps search) and verify the Airbnb search URL lands near the venue.
 - **Hashtag** — `#NINAkawAngPusoNiLEO` in `src/components/Interlude.jsx`.
 - **Deploy** — `dist/` is fully static; drop it on Vercel, Netlify, or GitHub Pages.

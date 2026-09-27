@@ -15,6 +15,12 @@ export const ANNOUNCED = {
   rsvp: false, // opens once invitations with personal links go out
 }
 
+/* The RSVP Google Sheet's web-app URL (…/exec) — see rsvp-sheet/SETUP.md. Until
+   it's set, the RSVP card asks guests to use their invitation link. */
+export const RSVP_ENDPOINT =
+  import.meta.env.VITE_RSVP_ENDPOINT ||
+  'https://script.google.com/macros/s/AKfycbx9n3Ay0JjmBFLKc9wGs4fCbhrV9RekXKYTrZOT4Jv2r4G3xC4qrhWDFfpeNl8_q5B6/exec'
+
 /* Cards shown in the Coming Soon section, in page order. A card stays up
    while any of its keys is still false, and disappears once all are true.
    Only things guests act on get a card — the motif, flowers, and entourage

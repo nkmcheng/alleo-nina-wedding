@@ -36,7 +36,7 @@ export default function Details() {
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={3}>
-            <p className="detail-when">Two hundred fifty dear guests</p>
+            <p className="detail-when">With all our love</p>
             <h3>The Company</h3>
             <p>Our families, our ninongs and ninangs, and the friends who carried us here — you.</p>
           </Reveal>

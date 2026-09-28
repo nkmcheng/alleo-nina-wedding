@@ -63,15 +63,9 @@ export const MOTIFS = {
       { name: 'Emerald green', hex: '#1C5440', who: 'mother of the bride' },
       { name: 'Steel blue', hex: '#56708F', who: 'mother of the groom' },
     ],
-    guests: g('taupe', 'dustyRose', 'terracotta', 'mocha', 'mauve'),
-    /* The couple's suggested guest palette (Sep 2026): soft shades that sit
-       well beside the teal. Suggestions only — the site says so. */
-    guestGroups: [
-      { label: 'Rosy & warm', colors: g('dustyRose', 'blush', 'mauve', 'peach', 'terracotta') },
-      { label: 'Soft greens', colors: g('softSage', 'olive') },
-      { label: 'Lilacs & blues', colors: g('lavender', 'dustyLilac', 'powderBlue', 'dustyBlue') },
-      { label: 'Earthy neutrals', colors: g('taupe', 'beige', 'warmGrey', 'mocha', 'chocolate') },
-    ],
+    /* Five suggested guest colors (Sep 2026) — one soft shade per family, all
+       worn in the attire boards. Suggestions only; the site says so. */
+    guests: g('dustyRose', 'softSage', 'lavender', 'dustyBlue', 'taupe'),
     art: { hero: heroTeal, entourage: entourageTeal, flowers: flowersTeal },
     flowers: {
       accents: [

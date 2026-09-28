@@ -7,7 +7,6 @@ import couplesImg from '../assets/guests-couples-garden.jpg'
 /* Garden dressy casual. Kept deliberately short — the boards do the
    explaining. The palette is a suggestion; the only firm ask is no bridal white. */
 export default function Attire({ motif }) {
-  const colors = motif.guestGroups?.flatMap((g) => g.colors) ?? motif.guests
 
   return (
     <section id="attire">
@@ -50,7 +49,7 @@ export default function Attire({ motif }) {
         <Reveal as="h3" className="attire-sub">Suggested colors</Reveal>
         <Reveal as="p" className="palette-note">Optional — wear what you love.</Reveal>
         <Reveal className="swatches palette" key={motif.key}>
-          {colors.map((s) => (
+          {motif.guests.map((s) => (
             <div className="sw" key={s.name}>
               <div className="dot" style={{ background: s.hex }} />
               <span>{s.name}</span>

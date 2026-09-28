@@ -15,7 +15,7 @@ const STEPS = [
 const FAQ = [
   {
     q: 'Can I bring a plus-one?',
-    a: 'Your invitation reserves a set number of seats for you, and reception seating is limited to those seats. Anyone traveling with you is welcome to enjoy Tagaytay or the hotel — and if you need an extra seat, just ask in your RSVP.',
+    a: 'Your invitation reserves a set number of seats for you, and reception seating is limited to those seats. Anyone traveling with you is welcome to enjoy Tagaytay or the hotel. If you need an extra seat, just ask in your RSVP.',
   },
   {
     q: 'Are kids welcome?',
@@ -23,18 +23,18 @@ const FAQ = [
   },
   {
     q: 'Can I take photos?',
-    a: 'Of course — just mind our photographers and try not to block their view or step into the aisle.',
+    a: 'Of course! Just mind our photographers and try not to block their view or step into the aisle.',
   },
   { q: 'Is there a hashtag?', a: '#NewBeginNINSWithLeo' },
   {
     q: 'When do I RSVP?',
     a: ANNOUNCED.rsvp
       ? 'By January 6, 2027, using the personal link in your invitation.'
-      : 'Soon — we’re finalizing the details. Your invitation will include your personal RSVP link.',
+      : 'Soon! We’re finalizing the details. Your invitation will include your personal RSVP link.',
   },
   {
     q: 'Where can we stay?',
-    a: 'At Hillcreek itself, or a nearby Airbnb — Tagaytay is small, and taxis are easy to find.',
+    a: 'At Hillcreek itself, or a nearby Airbnb. Tagaytay is small, and taxis are easy to find.',
   },
 ]
 
@@ -84,7 +84,7 @@ export default function GoodToKnow() {
             <p className="detail-when">Getting around</p>
             <h3>Easy once you’re up</h3>
             <p className="detail-note">
-              Tagaytay is small, and taxis are easy to find — both venues are right in town.
+              Tagaytay is small, and taxis are easy to find. Both venues are right in town.
             </p>
           </Reveal>
         </div>

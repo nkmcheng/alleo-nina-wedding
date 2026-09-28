@@ -24,9 +24,9 @@ export default function ComingSoon() {
         </div>
         {!single && (
           <Reveal as="p" className="tba-foot">
-            We’re finalizing these with our coordinator, dress maker, and stylists —
+            We’re finalizing these with our coordinator, dress maker, and stylists.
             <br />
-            check back soon.
+            Check back soon!
           </Reveal>
         )}
       </div>

@@ -14,7 +14,7 @@ export default function Flowers({ motif }) {
         <Reveal as="h2">Flowers That Follow the Motif</Reveal>
         <Flourish />
         <Reveal as="p" className="center-lede">
-          Every version keeps the same ivory backbone and fresh greenery — only the accent blooms
+          Every version keeps the same ivory backbone and fresh greenery. Only the accent blooms
           change with the motif.
         </Reveal>
         <div className="detail-grid">
@@ -53,7 +53,7 @@ export default function Flowers({ motif }) {
           <Reveal className="attire-board bloom-board" key={`bloomart-${motif.key}`}>
             <img
               src={motif.art.flowers}
-              alt={`Watercolor floral study for the ${motif.label} motif — ivory blooms with motif accents and greenery`}
+              alt={`Watercolor floral study for the ${motif.label} motif: ivory blooms with motif accents and greenery`}
               loading="lazy"
             />
             <p className="board-caption">The {motif.label} arrangement</p>
@@ -63,7 +63,7 @@ export default function Flowers({ motif }) {
           {motif.flowers.note}
         </Reveal>
         <Reveal as="p" className="bloom-warning">
-          Whichever motif wins: the date is one week before Valentine's, when flower prices surge —
+          Whichever motif wins: the date is one week before Valentine's, when flower prices surge, so
           book the florist early with a locked price list.
         </Reveal>
       </div>

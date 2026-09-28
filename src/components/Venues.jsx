@@ -24,7 +24,7 @@ export default function Venues() {
             <p className="detail-when">Ceremony · 11:00 AM</p>
             <h3>Chapel on the Hill</h3>
             <p>
-              A beloved octagonal chapel in a quiet garden courtyard — terracotta roof, open
+              A beloved octagonal chapel in a quiet garden courtyard, with a terracotta roof, open
               verandas, and a brick path to its doors. Mornings here are cool and misty; bring a
               light wrap.
             </p>
@@ -51,7 +51,7 @@ export default function Venues() {
             <p className="detail-when">Reception · Lunch</p>
             <h3>Hillcreek Gardens Tagaytay</h3>
             <p>
-              A garden estate of arched windows, painted murals, and chandeliers — ten minutes from
+              A garden estate of arched windows, painted murals, and chandeliers, ten minutes from
               the chapel. Lunch, toasts, and dancing follow the ceremony.
             </p>
             <a
@@ -81,7 +81,7 @@ export default function Venues() {
             </span>
           </div>
           <p className="board-caption">
-            From “I do” to the first dance — 8.6 km, about 13 minutes of scenic drive
+            From “I do” to the first dance: 8.6 km, about 13 minutes of scenic drive
           </p>
         </Reveal>
 
@@ -89,7 +89,7 @@ export default function Venues() {
           <p className="detail-when">Staying the night?</p>
           <h3>Stay where the celebration is</h3>
           <p>
-            <strong>Hillcreek Gardens has rooms right on the estate</strong> — wake up steps from
+            <strong>Hillcreek Gardens has rooms right on the estate</strong>. Wake up steps from
             the reception, with the gardens to yourselves in the morning. Our guests enjoy a{' '}
             <strong>discounted rate</strong>; just mention the Alleo &amp; Niña wedding when you
             book. Prefer your own space? There are lovely Airbnbs minutes away.

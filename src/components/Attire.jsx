@@ -15,7 +15,7 @@ export default function Attire({ motif }) {
         <Reveal as="h2">Garden Dressy Casual</Reveal>
         <Flourish />
         <Reveal as="p" className="center-lede">
-          Come looking your best — polished and put-together, but no suits or gowns needed.
+          Come looking your best: polished and put-together, but no suits or gowns needed.
         </Reveal>
 
         <div className="attire-boards">
@@ -40,14 +40,14 @@ export default function Attire({ motif }) {
         <Reveal className="attire-board couples-board">
           <img
             src={couplesImg}
-            alt="Watercolor style board: three guest couples — short-sleeve shirt with a knee-length dress, knit polo with a midi wrap dress, and a barong with a blouse and midi skirt"
+            alt="Watercolor style board: three guest couples: short-sleeve shirt with a knee-length dress, knit polo with a midi wrap dress, and a barong with a blouse and midi skirt"
             loading="lazy"
           />
           <p className="board-caption">Guest looks</p>
         </Reveal>
 
         <Reveal as="h3" className="attire-sub">Suggested colors</Reveal>
-        <Reveal as="p" className="palette-note">Optional — wear what you love.</Reveal>
+        <Reveal as="p" className="palette-note">Optional. Wear what you love!</Reveal>
         <Reveal className="swatches palette" key={motif.key}>
           {motif.guests.map((s) => (
             <div className="sw" key={s.name}>
@@ -57,7 +57,7 @@ export default function Attire({ motif }) {
           ))}
         </Reveal>
         <Reveal as="p" className="avoid-note">
-          Please avoid <strong>white, ivory, cream &amp; champagne</strong> — those are for the bride.
+          Please avoid <strong>white, ivory, cream &amp; champagne</strong>, since those are for the bride.
         </Reveal>
       </div>
     </section>

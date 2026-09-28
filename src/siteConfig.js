@@ -30,11 +30,11 @@ export const COMING_SOON = [
   {
     keys: ['attire'],
     title: 'What to Wear',
-    note: 'A simple guest dress guide, with sample outfits and colors — coming soon.',
+    note: 'A simple guest dress guide, with sample outfits and colors. Coming soon.',
   },
   {
     keys: ['rsvp'],
     title: 'RSVP',
-    note: 'Invitations with your personal RSVP link are on their way — please wait for ours before replying.',
+    note: 'Invitations with your personal RSVP link are on their way. Please wait for ours before replying.',
   },
 ]

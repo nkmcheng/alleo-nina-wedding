@@ -23,8 +23,8 @@ const ROLE_CARDS = {
   'principal sponsor': {
     eyebrow: 'To Our Beloved Ninong & Ninang',
     title: 'An Invitation to Stand as Principal Sponsor',
-    line: 'With full hearts, we ask you to stand as witnesses to our vows and walk beside us as our principal sponsors — a role we could imagine no one else filling.',
-    attire: 'Ninangs: antique gold or silver grey — any style you love · Ninongs: long-sleeve barong, black slacks',
+    line: 'With full hearts, we ask you to stand as witnesses to our vows and walk beside us as our principal sponsors. We could imagine no one else in this role.',
+    attire: 'Ninangs: antique gold or silver grey, any style you love · Ninongs: long-sleeve barong, black slacks',
     yes: 'Honored to accept',
     no: 'Unable to attend',
     link: { href: '#entourage', label: 'Your attire colors' },
@@ -136,7 +136,7 @@ export default function Rsvp() {
 
           {status === 'error' && (
             <p className="ink-line">
-              Something went wrong on our side — please try again in a moment,
+              Something went wrong on our side. Please try again in a moment,
               <br />
               or message us at {RSVP_PHONE}.
             </p>
@@ -147,7 +147,7 @@ export default function Rsvp() {
               <p className="ink-line ink-thanks">Thank you, {party.name}!</p>
               <p className="ink-line">
                 {result.response === 'Accepts'
-                  ? `We can’t wait to celebrate with you — ${result.total} seat${result.total > 1 ? 's' : ''} noted.` +
+                  ? `We can’t wait to celebrate with you! ${result.total} seat${result.total > 1 ? 's' : ''} noted.` +
                     (result.extra
                       ? ` We’ll get back to you about the extra seat${result.extra > 1 ? 's' : ''}.`
                       : '')
@@ -172,7 +172,7 @@ export default function Rsvp() {
                   We have reserved <strong>{seats}</strong> seat{seats > 1 ? 's' : ''} in your honor
                 </p>
                 {party.reply && (
-                  <p className="ink-muted ink-small">We have your reply — feel free to update it below.</p>
+                  <p className="ink-muted ink-small">We have your reply. Feel free to update it below.</p>
                 )}
               </div>
 
@@ -222,7 +222,7 @@ export default function Rsvp() {
                   </div>
                   {names.length > seats && (
                     <p className="ink-extra">
-                      That’s more than we reserved — we’ll get back to you about the extra seat
+                      That’s more than we reserved, so we’ll get back to you about the extra seat
                       {names.length - seats > 1 ? 's' : ''}.
                     </p>
                   )}
@@ -257,7 +257,7 @@ export default function Rsvp() {
                   maxLength={500}
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
-                  placeholder="Dietary needs, questions, or requests — optional"
+                  placeholder="Dietary needs, questions, or requests (optional)"
                 />
               </label>
 

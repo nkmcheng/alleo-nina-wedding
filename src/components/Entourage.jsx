@@ -5,13 +5,13 @@ import { capitalize } from '../theme.js'
 export default function Entourage({ motif }) {
   const { mid, light } = motif.names
   const roles = [
-    { chips: [motif.deep], title: 'Maid of Honor', text: `Deep ${mid} gown — one shade richer than the bridesmaids.`, delay: 1 },
+    { chips: [motif.deep], title: 'Maid of Honor', text: `Deep ${mid} gown, one shade richer than the bridesmaids.`, delay: 1 },
     { chips: [motif.mid], title: 'Bridesmaids', text: `${capitalize(mid)} satin gowns, each in her own silhouette.`, delay: 2 },
     { chips: ['#EFE4CD'], title: 'Groomsmen', text: 'Long-sleeve ecru barong with black trousers and shoes.', delay: 3 },
     motif.mothers
-      ? { chips: motif.mothers.map((m) => m.hex), title: 'Mothers', text: `Floor-length satin gowns — ${motif.mothers.map((m) => `${m.name.toLowerCase()} for the ${m.who}`).join(', ')}.`, delay: 1 }
-      : { chips: [motif.light], title: 'Mothers', text: `${capitalize(light)} beaded Filipiniana — same color family, each her own cut.`, delay: 1 },
-    { chips: ['#B08D4F', '#99A0A8'], title: 'Ninangs', text: 'Antique gold or silver grey, in any style she loves — gown, formal dress, or Filipiniana. Only the color is asked; the silhouette is hers.', delay: 2 },
+      ? { chips: motif.mothers.map((m) => m.hex), title: 'Mothers', text: `Floor-length satin gowns: ${motif.mothers.map((m) => `${m.name.toLowerCase()} for the ${m.who}`).join(', ')}.`, delay: 1 }
+      : { chips: [motif.light], title: 'Mothers', text: `${capitalize(light)} beaded Filipiniana in the same color family, each her own cut.`, delay: 1 },
+    { chips: ['#B08D4F', '#99A0A8'], title: 'Ninangs', text: 'Antique gold or silver grey, in any style she loves: gown, formal dress, or Filipiniana. Only the color is asked; the silhouette is hers.', delay: 2 },
     { chips: ['#EFE4CD'], title: 'Ninongs', text: 'Long-sleeve barong, black slacks, and an optional gold or silver pocket square.', delay: 3 },
   ]
 
@@ -25,7 +25,7 @@ export default function Entourage({ motif }) {
           <Reveal className="attire-board ent-board" key={`ent-${motif.key}`}>
             <img
               src={motif.art.entourage}
-              alt={`Watercolor style board: the entourage in ${motif.names.mid} — maid of honor, bridesmaids, mothers in emerald and steel blue, and ninangs in antique gold and silver grey`}
+              alt={`Watercolor style board: the entourage in ${motif.names.mid}: maid of honor, bridesmaids, mothers in emerald and steel blue, and ninangs in antique gold and silver grey`}
               loading="lazy"
             />
             <p className="board-caption">

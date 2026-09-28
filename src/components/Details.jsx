@@ -20,7 +20,7 @@ export default function Details() {
               Tagaytay City
             </p>
             <p className="detail-note">
-              Kindly be seated by 10:30 AM — the chapel doors open to morning mist and pine.
+              Kindly be seated by 10:30 AM. The chapel doors open to morning mist and pine.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={2}>
@@ -39,7 +39,7 @@ export default function Details() {
             <p className="detail-when">With all our love</p>
             <h3>The Company</h3>
             <p className="detail-note">
-              Our families, our ninongs and ninangs, and the friends who carried us here — you.
+              Our families, our ninongs and ninangs, and the friends who carried us here. That means you.
             </p>
           </Reveal>
         </div>
@@ -47,7 +47,7 @@ export default function Details() {
           <Reveal className="attire-board cocktail-board">
             <img
               src={cocktailImg}
-              alt="Watercolor of Hillcreek's sunken garden lawn dressed for cocktail hour — ivory booths, cocktail tables with teal runners, and string lights between the trees"
+              alt="Watercolor of Hillcreek's sunken garden lawn dressed for cocktail hour: ivory booths, cocktail tables with teal runners, and string lights between the trees"
               loading="lazy"
             />
             <p className="board-caption">The garden lawn at Hillcreek, dressed for cocktail hour</p>

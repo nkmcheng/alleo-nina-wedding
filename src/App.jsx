@@ -3,6 +3,7 @@ import Petals from './components/Petals.jsx'
 import Hero from './components/Hero.jsx'
 import Details from './components/Details.jsx'
 import Venues from './components/Venues.jsx'
+import GoodToKnow from './components/GoodToKnow.jsx'
 import Flowers from './components/Flowers.jsx'
 import Attire from './components/Attire.jsx'
 import Entourage from './components/Entourage.jsx'
@@ -30,6 +31,7 @@ export default function App() {
       <Hero motif={ANNOUNCED.theme ? motif : null} />
       <Details />
       <Venues />
+      {ANNOUNCED.guide && <GoodToKnow />}
       {ANNOUNCED.theme && <Flowers motif={motif} />}
       {ANNOUNCED.attire && <Attire motif={motif} />}
       {ANNOUNCED.entourage && <Entourage motif={motif} />}

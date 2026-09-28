@@ -11,6 +11,7 @@ export const ANNOUNCED = {
   theme: false, // motif, colors & flowers — petals stay neutral until true; also the cocktail-lawn board
   attire: true, // what to wear — published Sep 2026
   entourage: true, // entourage colors — published Sep 2026
+  guide: true, // Good to Know: getting there, weather, gifts, FAQ
   gallery: false, // the ceremony/reception look portraits (reveals the gowns)
   rsvp: false, // opens once invitations with personal links go out
 }

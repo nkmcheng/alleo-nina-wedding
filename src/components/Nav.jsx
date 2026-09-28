@@ -4,6 +4,7 @@ import { ANNOUNCED } from '../siteConfig.js'
 const LINKS = [
   { href: '#details', label: 'The Day' },
   { href: '#venues', label: 'Venues' },
+  { href: '#good-to-know', label: 'Good to Know', flag: 'guide' },
   { href: '#flowers', label: 'Flowers', flag: 'theme' },
   { href: '#attire', label: 'Attire', flag: 'attire' },
   { href: '#entourage', label: 'Entourage', flag: 'entourage' },

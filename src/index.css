@@ -739,6 +739,69 @@ h2 {
   height: 52px;
 }
 
+/* ---------- Good to Know ---------- */
+.journey-board {
+  max-width: 1000px;
+  margin: 0 auto 2.4rem;
+}
+.journey-steps {
+  list-style: none;
+  padding: 0.9rem 0.4rem 1rem;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  text-align: center;
+}
+.journey-steps li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+.journey-steps strong {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 1.02rem;
+  color: var(--ink);
+}
+.journey-num {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  font-family: var(--utility);
+  font-size: 0.72rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.faq-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.faq-item dt {
+  font-family: var(--display);
+  font-size: 1.1rem;
+}
+.faq-item dd {
+  margin: 0.3rem 0 0;
+  color: var(--ink-soft);
+}
+@media (max-width: 720px) {
+  .journey-steps {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.3rem;
+  }
+}
+
 /* ---------- Entourage ---------- */
 .ent-grid {
   display: grid;

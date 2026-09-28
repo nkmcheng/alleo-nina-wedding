@@ -100,7 +100,7 @@ export default function GoodToKnow() {
             <h3>Your presence is enough</h3>
             <p className="detail-note">
               <strong>Celebrating with you is the greatest gift.</strong> Should you wish to bless us
-              further, a monetary gift toward our first home would be received with so much
+              further, a <mark>monetary gift</mark> toward our first home would be received with so much
               gratitude.
             </p>
           </Reveal>

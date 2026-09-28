@@ -15,9 +15,8 @@ export default function Details() {
             <p className="detail-when">Eleven o'clock</p>
             <h3>The Ceremony</h3>
             <p className="detail-where">
-              Chapel on the Hill
-              <br />
-              Tagaytay City
+              <strong>Chapel on the Hill</strong>
+              <span className="detail-city">Tagaytay City</span>
             </p>
             <p className="detail-note">
               Kindly be seated by <mark>10:30 AM</mark>. The chapel doors open to morning mist and
@@ -28,13 +27,11 @@ export default function Details() {
             <p className="detail-when">Lunch to follow</p>
             <h3>The Reception</h3>
             <p className="detail-where">
-              Hillcreek Gardens
-              <br />
-              Tagaytay City
+              <strong>Hillcreek Gardens</strong>
+              <span className="detail-city">Tagaytay City</span>
             </p>
             <p className="detail-note">
-              A <strong>garden lunch</strong> among the murals and arched windows, with music by
-              Acsions.
+              A garden lunch among the arched windows and chandeliers, with music by Acsions.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={3}>

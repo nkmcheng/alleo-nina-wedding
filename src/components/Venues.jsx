@@ -43,7 +43,7 @@ export default function Venues() {
           <div className="pic">
             <img
               src={receptionImg}
-              alt="Watercolor illustration of the Hillcreek Gardens reception hall with teal mural walls"
+              alt="Watercolor illustration of the Hillcreek Gardens reception hall"
               loading="lazy"
             />
           </div>
@@ -51,8 +51,8 @@ export default function Venues() {
             <p className="detail-when">Reception · Lunch</p>
             <h3>Hillcreek Gardens Tagaytay</h3>
             <p>
-              A garden estate of arched windows, painted murals, and chandeliers, <strong>ten minutes from
-              the chapel</strong>. Lunch, toasts, and dancing follow the ceremony.
+              A garden estate of arched windows, wood-beamed ceilings, and chandeliers,{' '}
+              <strong>about 30 minutes from the chapel</strong>. Lunch, toasts, and dancing follow the ceremony.
             </p>
             <a
               className="btn"
@@ -81,7 +81,7 @@ export default function Venues() {
             </span>
           </div>
           <p className="board-caption">
-            From “I do” to the first dance: 8.6 km, about 13 minutes of scenic drive
+            From “I do” to the first dance: 8.6 km, about 30 minutes with traffic
           </p>
         </Reveal>
 

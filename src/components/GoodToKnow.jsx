@@ -9,7 +9,7 @@ const STEPS = [
   { title: 'Leave early', text: <>From Manila, allow <strong>2–3 hours</strong> on a Saturday.</> },
   { title: 'Head up SLEX', text: <>Then <strong>CALAX</strong> or the <strong>Sta. Rosa exit</strong> to Tagaytay.</> },
   { title: 'Chapel on the Hill', text: <>Kindly be seated by <mark>10:30 AM</mark>.</> },
-  { title: 'Hillcreek Gardens', text: <>Lunch follows <strong>right after the ceremony</strong>.</> },
+  { title: 'Hillcreek Gardens', text: <>Lunch follows, <strong>about 30 minutes</strong> from the chapel.</> },
 ]
 
 const FAQ = [

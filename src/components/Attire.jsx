@@ -23,7 +23,7 @@ export default function Attire({ motif }) {
           <Reveal className="attire-board" delay={1}>
             <img
               src={ladiesImg}
-              alt="Watercolor style board: five women in a knee-length dress, blouse with trousers, tea-length dress, jumpsuit, and blouse with midi skirt"
+              alt="Watercolor style board: five women in sage, dusty blue with taupe, lavender, dusty rose, and lavender with taupe: a knee-length dress, blouse with trousers, tea-length dress, jumpsuit, and blouse with midi skirt"
               loading="lazy"
             />
             <p className="board-caption">Ladies</p>
@@ -31,7 +31,7 @@ export default function Attire({ motif }) {
           <Reveal className="attire-board" delay={2}>
             <img
               src={gentsImg}
-              alt="Watercolor style board: four men in a knit polo with chinos, linen shirt, short-sleeve barong, and rolled-sleeve shirt with sneakers"
+              alt="Watercolor style board: four men in a dusty-blue polo with chinos, sage linen shirt with taupe trousers, short-sleeve barong, and dusty-blue shirt with taupe chinos and sneakers"
               loading="lazy"
             />
             <p className="board-caption">Gentlemen</p>

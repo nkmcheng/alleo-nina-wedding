@@ -15,18 +15,15 @@ import { MOTIFS } from './theme.js'
 import { ANNOUNCED } from './siteConfig.js'
 
 /* Motif locked July 2026: Ocean Teal. The base palette lives in index.css;
-   MOTIFS.teal supplies the art, guest palette, florals, and copy. Until
-   ANNOUNCED.theme is true the hero and petals stay neutral so the motif
-   isn't revealed early. */
+   MOTIFS.teal supplies the art, guest palette, florals, and copy. The petals
+   use the motif colors now that the entourage colors are public; the hero
+   still waits for ANNOUNCED.theme. */
 const motif = MOTIFS.teal
-
-/* Ivory and gold only — no hint of the motif. */
-const NEUTRAL_PETALS = ['rgba(233,223,201,0.75)', 'rgba(220,205,175,0.55)', 'rgba(185,155,95,0.35)']
 
 export default function App() {
   return (
     <>
-      <Petals colors={ANNOUNCED.theme ? motif.petals : NEUTRAL_PETALS} />
+      <Petals colors={motif.petals} />
       <Nav />
       <Hero motif={ANNOUNCED.theme ? motif : null} />
       <Details />

@@ -75,7 +75,14 @@ export const MOTIFS = {
       ],
       note: 'True teal blooms don’t exist in nature, so flowers stay ivory with dusty-blue accents, and the teal itself lives in ribbons, table runners, candles, and stationery.',
     },
-    petals: ['rgba(147,186,180,0.55)', 'rgba(233,223,201,0.75)', 'rgba(38,93,100,0.30)', 'rgba(185,155,95,0.35)'],
+    /* Ivory, seafoam, ocean teal, dusty-blue hydrangea, and a little gold. */
+    petals: [
+      'rgba(233,223,201,0.8)',
+      'rgba(147,186,180,0.6)',
+      'rgba(69,126,124,0.4)',
+      'rgba(145,163,176,0.5)',
+      'rgba(185,155,95,0.35)',
+    ],
   },
   maroon: {
     key: 'maroon',

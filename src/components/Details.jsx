@@ -12,33 +12,35 @@ export default function Details() {
         <Flourish />
         <div className="detail-grid">
           <Reveal className="detail-card" delay={1}>
-            <p className="detail-when">Eleven o'clock in the morning</p>
+            <p className="detail-when">Eleven o'clock</p>
             <h3>The Ceremony</h3>
-            <p>
+            <p className="detail-where">
               Chapel on the Hill
               <br />
               Tagaytay City
-              <br />
-              <br />
+            </p>
+            <p className="detail-note">
               Kindly be seated by 10:30 AM — the chapel doors open to morning mist and pine.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={2}>
             <p className="detail-when">Lunch to follow</p>
             <h3>The Reception</h3>
-            <p>
+            <p className="detail-where">
               Hillcreek Gardens
               <br />
               Tagaytay City
-              <br />
-              <br />
+            </p>
+            <p className="detail-note">
               A garden lunch among the murals and arched windows, with music by Acsions.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={3}>
             <p className="detail-when">With all our love</p>
             <h3>The Company</h3>
-            <p>Our families, our ninongs and ninangs, and the friends who carried us here — you.</p>
+            <p className="detail-note">
+              Our families, our ninongs and ninangs, and the friends who carried us here — you.
+            </p>
           </Reveal>
         </div>
         {ANNOUNCED.theme && (

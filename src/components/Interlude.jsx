@@ -9,17 +9,17 @@ export default function Interlude() {
       <Reveal className="frame">
         <img
           src={coupleImg}
-          alt="Watercolor illustration of Alleo in a barong and Nina in her wedding gown, in a garden"
+          alt="Watercolor illustration of Alleo in a barong and Niña in her wedding gown, in a garden"
           loading="lazy"
         />
       </Reveal>
       <div className="frame-row">
         <Reveal className="frame small tilt-l">
-          <img src={alineImg} alt="Nina and Alleo at the altar — the ceremony look" loading="lazy" />
+          <img src={alineImg} alt="Niña and Alleo at the altar — the ceremony look" loading="lazy" />
           <p className="frame-caption">The Ceremony</p>
         </Reveal>
         <Reveal className="frame small tilt-r" delay={1}>
-          <img src={mermaidImg} alt="Nina and Alleo at the altar — the reception look" loading="lazy" />
+          <img src={mermaidImg} alt="Niña and Alleo at the altar — the reception look" loading="lazy" />
           <p className="frame-caption">The Reception</p>
         </Reveal>
       </div>
@@ -28,7 +28,7 @@ export default function Interlude() {
         <br />
         and the coffee is strong.”
       </Reveal>
-      <Reveal as="cite">#NINAkawAngPusoNiLEO</Reveal>
+      <Reveal as="cite">#NewBeginNINSWithLeo</Reveal>
     </div>
   )
 }

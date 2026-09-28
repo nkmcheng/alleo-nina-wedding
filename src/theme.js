@@ -2,7 +2,7 @@ import entourageTeal from './assets/entourage-teal.jpg'
 import flowersTeal from './assets/flowers-teal.jpg'
 import heroTeal from './assets/hero-teal.jpg'
 
-/* The three motif candidates Nina & Alleo are weighing, plus the recommended olive.
+/* The three motif candidates Niña & Alleo are weighing, plus the recommended olive.
    deep/mid/light fill the site's three motif slots (--olive-deep/--olive/--sage).
    Each motif carries its own guest palette: warm muted tones that stay clearly
    apart from that motif's entourage family, the mothers' colors, the bride's

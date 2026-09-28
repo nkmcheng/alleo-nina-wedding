@@ -91,7 +91,7 @@ export default function Venues() {
           <p>
             <strong>Hillcreek Gardens has rooms right on the estate</strong> — wake up steps from
             the reception, with the gardens to yourselves in the morning. Our guests enjoy a{' '}
-            <strong>discounted rate</strong>; just mention the Alleo &amp; Nina wedding when you
+            <strong>discounted rate</strong>; just mention the Alleo &amp; Niña wedding when you
             book. Prefer your own space? There are lovely Airbnbs minutes away.
           </p>
           <div className="stay-actions">

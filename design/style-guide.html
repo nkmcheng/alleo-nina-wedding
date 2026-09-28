@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alleo &amp; Nina · Wedding Style Guide — Ocean Teal</title>
+<title>Alleo &amp; Niña · Wedding Style Guide — Ocean Teal</title>
 <style>
   :root {
     --ground: #F8F4EA;
@@ -210,7 +210,7 @@
   <header class="hero">
     <div class="monogram">A·N</div>
     <p class="eyebrow">Wedding Style Guide &amp; RSVP Suite</p>
-    <h1>Alleo <span class="amp">&amp;</span> Nina</h1>
+    <h1>Alleo <span class="amp">&amp;</span> Niña</h1>
     <div class="hero-meta">
       <span>Saturday · 06 February 2027</span>
       <span>Ceremony 11:00 AM · Chapel on the Hill</span>
@@ -218,6 +218,7 @@
       <span>250 Guests</span>
     </div>
     <span class="locked">Motif locked · Ocean Teal · July 2026</span>
+    <p class="note" style="margin:1rem auto 0;">Last updated September 2026</p>
   </header>
 
   <!-- ================= MOTIF ================= -->
@@ -432,10 +433,36 @@
     </div>
     <p class="lede">
       RSVPs run through the wedding website: every party receives a <strong>personal invitation
-      link</strong> that greets them by name, shows their reserved seats, and caps their
-      headcount — only the response and number attending are editable. The printed cards below
-      are the companion for guests who prefer paper.
+      link</strong> that opens the RSVP card at the bottom of the main page, greets them by name,
+      and shows their reserved seats. Replies land in the couple's Google Sheet. The printed
+      cards below are the companion for guests who prefer paper.
     </p>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>How the online RSVP works</h3>
+        <ul class="tight">
+          <li><strong>The sheet:</strong> "Alleo &amp; Nina - RSVP" in nkmcheng@gmail.com's Google Drive. One row per invitation: Name, Role, Additional guests, Contact. The <strong>RSVP menu</strong> makes each row's private code and link.</li>
+          <li><strong>Seats:</strong> reserved = 1 + additional guests. Guests may bring <strong>fewer</strong>, or ask for <strong>up to 2 more</strong>. Extras are only a request, flagged in "Extra seats requested" for the couple to approve.</li>
+          <li><strong>Names:</strong> one name line per person attending, the first prefilled with the invitee.</li>
+          <li><strong>Notes &amp; requests:</strong> optional box for dietary needs, questions, or requests like "can I bring one more?"</li>
+          <li><strong>Changes:</strong> replying again updates the same row; the Log tab keeps every submission.</li>
+          <li><strong>Privacy:</strong> guest names live only in the sheet, never in the website's public code.</li>
+        </ul>
+        <p class="note">Setup and day-to-day use: <em>rsvp-sheet/SETUP.md</em>. The sheet's script: <em>rsvp-sheet/Code.gs</em>.</p>
+      </div>
+      <div class="card">
+        <h3>The card changes with the Role</h3>
+        <ul class="tight">
+          <li><strong>Principal Sponsor:</strong> "Thank you for standing with us as one of our principal sponsors." · links to their attire colors</li>
+          <li><strong>Secondary Sponsor:</strong> "Thank you for taking part in our ceremony." · attire colors</li>
+          <li><strong>Entourage:</strong> "We can't wait to have you beside us." · attire colors</li>
+          <li><strong>Family:</strong> "It wouldn't be the same without you." · what to wear</li>
+          <li><strong>Guest:</strong> no label or line · what to wear</li>
+        </ul>
+        <p class="note">Everyone except plain guests also sees their role in small gold capitals under their name.</p>
+      </div>
+    </div>
 
     <div class="rsvp">
       <span class="small-caps">Kindly Respond</span>
@@ -513,7 +540,7 @@
         <span><span class="box"></span>Sending love from afar</span>
       </div>
       <div class="rule"></div>
-      <p class="small-caps">Fittings with Marsha Berbon to follow · details from Nina &amp; Leo</p>
+      <p class="small-caps">Fittings with Marsha Berbon to follow · details from Niña &amp; Leo</p>
     </div>
     <p class="caption">Card 4 · The Entourage — bridesmaid &amp; groomsman proposal card, sent earliest of all</p>
 
@@ -530,10 +557,11 @@
     <div class="card">
       <h3>The hashtag</h3>
       <ul class="tight">
-        <li><strong>#NINAkawAngPusoNiLEO</strong> — <em>ninakaw ang puso ni Leo</em> — the chosen one!</li>
-        <li>Alternates in reserve: #LEOvesNINA · #NinaSaidYesFinalLEO · #NinaTamedHerLEO</li>
+        <li><strong>#NewBeginNINSWithLeo</strong> — "new beginnings with Leo" — the main hashtag, for the invitation, signs, and website</li>
+        <li><strong>#HappeNINSWithLeo</strong> — "happenings with Leo", and also "happy Nins with Leo" — the companion, for married life after the day</li>
+        <li><strong>#MorNINSWithLeo</strong> — "mornings with Leo" — a spare, fitting the 11 AM ceremony</li>
       </ul>
-      <p class="note">Alleo introduces himself as Leo, and every option features both names.</p>
+      <p class="note">Built on the couple's nicknames, Leo and Nins: <em>Nins</em> hides inside everyday words ending in "-nings". Spelled without ñ, so every guest can type them. Check each on Instagram and TikTok before printing.</p>
     </div>
 
     <div class="card">
@@ -546,30 +574,100 @@
     </div>
   </section>
 
+  <!-- ================= WEBSITE ================= -->
+  <section>
+    <div class="sec-head">
+      <h2>The Website</h2>
+      <span class="kicker">06 · nkmcheng.github.io/alleo-nina-wedding</span>
+    </div>
+    <p class="lede">
+      One page, launched with only what's final. Sections appear as they're decided; anything still
+      in the works waits behind a "to be announced" card. Every push to the site's repository goes
+      live within a minute, so changes are previewed locally first.
+    </p>
+    <div class="two-col">
+      <div class="card">
+        <h3>What guests see today</h3>
+        <ul class="tight">
+          <li><strong>Live:</strong> the date and countdown, schedule, venues and map, <strong>What to Wear</strong>, and <strong>Entourage Colors</strong> (published Sep 2026)</li>
+          <li><strong>Ready, switched off:</strong> RSVP, until invitations go out</li>
+          <li><strong>Hidden:</strong> the motif and flowers section (written for planning, not guests), the teal hero art, and the gown portraits</li>
+          <li><strong>Coming Soon:</strong> only RSVP. Only things guests act on get a card.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>How the site talks to guests</h3>
+        <ul class="tight">
+          <li><strong>Pictures over paragraphs.</strong> Sample-outfit boards do the explaining; text stays to a line or two.</li>
+          <li><strong>Only show how to dress</strong> — no "don't wear this" examples.</li>
+          <li><strong>No guest count</strong> on the site. The Company card reads "With all our love".</li>
+          <li><strong>RSVP stays on the main page</strong>, at the bottom — not a separate page. Links to …/rsvp/ redirect there.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="two-col" style="margin-top:1.2rem;">
+      <div class="card">
+        <h3>What to Wear, as published</h3>
+        <ul class="tight">
+          <li>One line: "Come looking your best — polished and put-together, but no suits or gowns needed."</li>
+          <li>Three watercolor boards: <strong>Ladies</strong> (five outfits, dresses and separates), <strong>Gentlemen</strong> (polo, linen shirt, barong, rolled sleeves with sneakers), and <strong>Guest looks</strong> (three well-dressed couples of different ages)</li>
+          <li>Five suggested colors, marked optional; one firm ask: no white, ivory, cream, or champagne</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Entourage Colors, as published</h3>
+        <ul class="tight">
+          <li>One board: maid of honor in Jennifer's deep-teal gown, two bridesmaids in ocean-teal satin, the mothers in emerald and steel blue per their pegs, ninangs in antique gold and silver grey</li>
+          <li>Role cards: maid of honor, bridesmaids, groomsmen, mothers, ninangs, ninongs</li>
+          <li><strong>No fathers</strong> in the entourage — neither the bride nor the groom has one. Never add them to roles, copy, or art.</li>
+          <li>Board faces are generic illustrations, never the real people, because the site is public</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Privacy</h3>
+      <p class="note">
+        The website and its repository (github.com/nkmcheng/alleo-nina-wedding) are public. The
+        reference photos of the entourage and the couple's pegs stay on the couple's computer
+        (<em>design/references/</em>, never uploaded). This style guide isn't on the website, but it
+        is readable in the repository; keeping it local-only is still to decide.
+      </p>
+    </div>
+  </section>
+
   <!-- ================= NEXT STEPS ================= -->
   <section>
     <div class="sec-head">
       <h2>Decisions &amp; To-Dos</h2>
-      <span class="kicker">06 · Checklist</span>
+      <span class="kicker">07 · Checklist</span>
     </div>
     <ul class="check">
       <li class="done">Motif locked: Ocean Teal, with antique gold &amp; silver for principal sponsors</li>
       <li class="done">Bride's two looks decided with Marsha Berbon (champagne A-line + beaded mermaid)</li>
-      <li class="done">Guest dress code set: smart casual, warm neutrals, no suits</li>
-      <li class="done">Wedding website built, with personalized RSVP links and venue map</li>
+      <li class="done">Entourage colors set: ocean-teal satin bridesmaids, deep-teal maid of honor (Jennifer's gown), champagne bride, emerald mother of the bride, steel-blue mother of the groom</li>
+      <li class="done">Guest dress code set: Garden Dressy Casual, five optional colors, only white and champagne off-limits</li>
+      <li class="done">What to Wear and Entourage Colors published on the website (Sep 2026)</li>
+      <li class="done">RSVP connected to the Google Sheet and tested end to end (switched off until invitations go out)</li>
+      <li>Update the sheet with the latest script: paste, RSVP → Set up tabs, RSVP → Create missing codes &amp; links, Manage deployments → New version</li>
+      <li>Add every invitation to the sheet's Guests tab — Name, Role, Additional guests, Contact — then create the links; remove the Harold test row when done</li>
+      <li>Send Claude the real RSVP contact number (the card still shows 09XX · XXX · XXXX)</li>
+      <li>Decide when RSVP opens, then switch it on and send each party their link</li>
+      <li>Archive the old Apps Script deployment so only one remains</li>
       <li>Distribute one reference ocean-teal fabric swatch to the entourage, and emerald / steel-blue swatches to the mothers</li>
       <li>Confirm Hillcreek's room-discount percentage (10–15%) and preferred booking channel</li>
       <li>Book the florist with a locked, Valentine's-proof price list (target: before Q4 2026)</li>
-      <li>Finalize the 250-guest list; enter every party + reserved seats into the website's guest file</li>
-      <li>Set up the real RSVP inbox and contact number, then print cards + send links</li>
+      <li>Print RSVP cards for guests who prefer paper</li>
       <li>Send principal-sponsor invitations first — ninongs and ninangs get the earliest notice</li>
       <li>Book the photo booth supplier (on the cocktail-hour list; not yet booked)</li>
       <li>Brief Artuz 101 on warm-white uplighting for the ballroom</li>
+      <li class="done">Hashtag chosen: #NewBeginNINSWithLeo, with #HappeNINSWithLeo and #MorNINSWithLeo</li>
+      <li>Website ideas, not yet started: getting there and Saturday Tagaytay traffic (aim to arrive by 10:30), a "bring a light wrap" weather line, a gifts note, and a short FAQ (kids, plus-ones, unplugged ceremony, hashtag)</li>
+      <li>Decide whether this style guide stays in the public repository or becomes local-only</li>
     </ul>
   </section>
 
   <footer>
-    Alleo &amp; Nina · 06 · 02 · 2027 · Tagaytay · #NINAkawAngPusoNiLEO
+    Alleo &amp; Niña · 06 · 02 · 2027 · Tagaytay · #NewBeginNINSWithLeo
   </footer>
 
 </div>

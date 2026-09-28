@@ -7,31 +7,50 @@ const RSVP_PHONE = '09XX · XXX · XXXX'
 /* Seats a party may ask for beyond its reservation — mirrors MAX_EXTRA in rsvp-sheet/Code.gs. */
 const MAX_EXTRA = 2
 
-/* A personal line and the right dress guide for each Role in the sheet.
-   Roles are matched case-insensitively; anything else gets the guest version. */
+/* Wording for each Role in the sheet, taken from the printed RSVP suite in
+   design/style-guide.html so paper and screen match. Roles are matched
+   case-insensitively; anything else (and Family) uses the guest card. */
+const GUEST_CARD = {
+  eyebrow: 'Kindly Respond',
+  title: 'RSVP',
+  line: null,
+  attire: null,
+  yes: 'Joyfully accepts',
+  no: 'Regretfully declines',
+  link: { href: '#attire', label: 'What to wear' },
+}
 const ROLE_CARDS = {
   'principal sponsor': {
-    line: 'Thank you for standing with us as one of our principal sponsors.',
+    eyebrow: 'To Our Beloved Ninong & Ninang',
+    title: 'An Invitation to Stand as Principal Sponsor',
+    line: 'With full hearts, we ask you to stand as witnesses to our vows and walk beside us as our principal sponsors — a role we could imagine no one else filling.',
+    attire: 'Ninangs: antique gold or silver grey — any style you love · Ninongs: long-sleeve barong, black slacks',
+    yes: 'Honored to accept',
+    no: 'Unable to attend',
     link: { href: '#entourage', label: 'Your attire colors' },
   },
   'secondary sponsor': {
-    line: 'Thank you for taking part in our ceremony.',
+    eyebrow: 'To Our Dear Friends',
+    title: 'Candle · Veil · Cord',
+    line: 'We would be honored to have you take part in our ceremony as one of our secondary sponsors.',
+    attire: 'Ladies: ocean teal formal · Gentlemen: long-sleeve barong',
+    yes: 'With pleasure',
+    no: 'Sending love from afar',
     link: { href: '#entourage', label: 'Your attire colors' },
   },
   entourage: {
-    line: 'We can’t wait to have you beside us.',
+    eyebrow: 'To Our Dearest',
+    title: 'Will You Stand With Us?',
+    line: 'Of everyone we know, we choose you. We would be honored to have you beside us on the day we say “I do.”',
+    attire: 'Ladies: ocean-teal satin, your own silhouette · Gentlemen: long-sleeve ecru barong, black slacks',
+    yes: 'I’m all yours',
+    no: 'Sending love from afar',
     link: { href: '#entourage', label: 'Your attire colors' },
   },
-  family: {
-    line: 'It wouldn’t be the same without you.',
-    link: { href: '#attire', label: 'What to wear' },
-  },
-  guest: {
-    line: null,
-    link: { href: '#attire', label: 'What to wear' },
-  },
+  family: { ...GUEST_CARD, line: 'It wouldn’t be the same without you.' },
+  guest: GUEST_CARD,
 }
-const roleCard = (role) => ROLE_CARDS[String(role || '').trim().toLowerCase()] ?? ROLE_CARDS.guest
+const roleCard = (role) => ROLE_CARDS[String(role || '').trim().toLowerCase()] ?? GUEST_CARD
 
 /* Personalized invitations: each party's link carries ?inv=<code>. The card
    looks the code up in the RSVP Google Sheet (rsvp-sheet/Code.gs), greets the party
@@ -100,8 +119,8 @@ export default function Rsvp() {
     <section id="rsvp" className="band">
       <div className="wrap">
         <Reveal className="ink-card">
-          <p className="ink-eyebrow">Kindly Respond</p>
-          <p className="ink-title">RSVP</p>
+          <p className="ink-eyebrow">{card.eyebrow}</p>
+          <p className={`ink-title${card.title.length > 12 ? ' ink-title-long' : ''}`}>{card.title}</p>
           <div className="ink-rule" />
           <p className="ink-serif">Please reply by January 6, 2027</p>
 
@@ -148,6 +167,7 @@ export default function Rsvp() {
                   <p className="ink-role">{party.role}</p>
                 )}
                 {card.line && <p className="ink-role-line">{card.line}</p>}
+                {card.attire && <p className="ink-attire">{card.attire}</p>}
                 <p className="ink-reserved">
                   We have reserved <strong>{seats}</strong> seat{seats > 1 ? 's' : ''} in your honor
                 </p>
@@ -158,8 +178,8 @@ export default function Rsvp() {
 
               <div className="ink-choices" role="radiogroup" aria-label="Will you be joining us?">
                 {[
-                  [true, 'Joyfully accepts'],
-                  [false, 'Regretfully declines'],
+                  [true, card.yes],
+                  [false, card.no],
                 ].map(([value, label]) => (
                   <label className={`ink-choice${attending === value ? ' is-on' : ''}`} key={label}>
                     <input

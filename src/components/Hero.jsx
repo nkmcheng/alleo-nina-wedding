@@ -17,7 +17,7 @@ export default function Hero({ motif }) {
       <div className="hero-inner">
         <p className="hero-eyebrow">Together with their families</p>
         <h1>
-          Alleo <span className="amp">&amp;</span> Nina
+          Alleo <span className="amp">&amp;</span> Niña
         </h1>
         <p className="hero-script">are getting married in the Tagaytay hills</p>
         <div className="date-line">

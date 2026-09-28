@@ -1,4 +1,4 @@
-# Alleo & Nina — Wedding Website
+# Alleo & Niña — Wedding Website
 
 One-page wedding site for **February 6, 2027** · Chapel on the Hill (ceremony, 11 AM) → Hillcreek Gardens Tagaytay (reception).
 
@@ -23,7 +23,7 @@ The guest list and replies live in a Google Sheet owned by the couple, not in th
 
 - **RSVP contact number** — replace the placeholder `RSVP_PHONE` in `src/components/Rsvp.jsx`.
 - **Hillcreek stay discount** — the stay card in `src/components/Venues.jsx` says "discounted rate" without a number; once Hillcreek confirms (10% or 15%), put the figure in the copy. Also confirm their preferred booking link (currently the Google Maps search) and verify the Airbnb search URL lands near the venue.
-- **Hashtag** — `#NINAkawAngPusoNiLEO` in `src/components/Interlude.jsx`.
+- **Hashtag** — `#NewBeginNINSWithLeo` (companions `#HappeNINSWithLeo`, `#MorNINSWithLeo`) in `src/components/Interlude.jsx`.
 - **Deploy** — `dist/` is fully static; drop it on Vercel, Netlify, or GitHub Pages.
 
 ## Motif — locked: Ocean Teal

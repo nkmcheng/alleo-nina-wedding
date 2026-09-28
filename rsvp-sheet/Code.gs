@@ -1,4 +1,4 @@
-/* Alleo & Nina — RSVP backend (Google Apps Script).
+/* Alleo & Niña — RSVP backend (Google Apps Script).
 
    Lives inside the RSVP Google Sheet (Extensions → Apps Script) and is
    deployed as a web app. The wedding site calls it to look up one party by

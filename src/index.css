@@ -1,4 +1,4 @@
-/* Alleo & Nina — ivory letterpress-invitation design system.
+/* Alleo & Niña — ivory letterpress-invitation design system.
    Single committed theme: colors are explicit so the page reads
    identically regardless of the viewer's OS theme. */
 :root {
@@ -345,9 +345,13 @@ h2 {
   gap: 1.4rem;
 }
 .detail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: var(--card);
   border: 1px solid var(--line);
-  padding: 2.2rem 1.8rem;
+  padding: 2.4rem 1.8rem;
   text-align: center;
   position: relative;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -379,6 +383,17 @@ h2 {
 .detail-card p {
   color: var(--ink-soft);
   font-size: 0.98rem;
+}
+.detail-when {
+  text-wrap: balance;
+}
+.detail-card .detail-where {
+  color: var(--ink);
+}
+.detail-card .detail-note {
+  margin-top: 0.9rem;
+  max-width: 30ch;
+  text-wrap: balance;
 }
 .delights {
   margin-top: 3.2rem;
@@ -915,6 +930,23 @@ h2 {
   margin-top: 0.7rem;
   font-style: italic;
   font-size: 1rem;
+}
+.ink-title-long {
+  font-size: 1.75rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  max-width: 22ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+.ink-attire {
+  margin-top: 0.8rem;
+  font-family: var(--utility);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  line-height: 1.7;
+  color: var(--ink-cream-soft);
 }
 .ink-reserved {
   margin-top: 1.3rem;

@@ -15,7 +15,8 @@ export default function Attire({ motif }) {
         <Reveal as="h2">Garden Dressy Casual</Reveal>
         <Flourish />
         <Reveal as="p" className="center-lede">
-          Come looking your best: polished and put-together, but no suits or gowns needed.
+          Come looking your best: <strong>polished and put-together</strong>, but{' '}
+          <mark>no suits or gowns needed</mark>.
         </Reveal>
 
         <div className="attire-boards">

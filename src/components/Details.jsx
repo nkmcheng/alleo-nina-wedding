@@ -20,7 +20,8 @@ export default function Details() {
               Tagaytay City
             </p>
             <p className="detail-note">
-              Kindly be seated by 10:30 AM. The chapel doors open to morning mist and pine.
+              Kindly be seated by <mark>10:30 AM</mark>. The chapel doors open to morning mist and
+              pine.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={2}>
@@ -32,7 +33,8 @@ export default function Details() {
               Tagaytay City
             </p>
             <p className="detail-note">
-              A garden lunch among the murals and arched windows, with music by Acsions.
+              A <strong>garden lunch</strong> among the murals and arched windows, with music by
+              Acsions.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={3}>

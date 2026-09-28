@@ -739,6 +739,25 @@ h2 {
   height: 52px;
 }
 
+/* ---------- Emphasis in body copy ---------- */
+.center-lede strong,
+.detail-card strong,
+.venue .info strong,
+.stay-card strong,
+.journey-steps span strong,
+.faq-item dd strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+/* The few must-knows get a soft gold highlighter stroke. */
+mark {
+  color: var(--ink);
+  font-weight: 600;
+  background: linear-gradient(transparent 58%, rgba(185, 155, 95, 0.35) 58%);
+  padding: 0 0.1em;
+  white-space: nowrap;
+}
+
 /* ---------- Good to Know ---------- */
 .journey-board {
   max-width: 1000px;

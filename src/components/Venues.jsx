@@ -25,8 +25,8 @@ export default function Venues() {
             <h3>Chapel on the Hill</h3>
             <p>
               A beloved octagonal chapel in a quiet garden courtyard, with a terracotta roof, open
-              verandas, and a brick path to its doors. Mornings here are cool and misty; bring a
-              light wrap.
+              verandas, and a brick path to its doors. Mornings here are usually breezy, so bring a{' '}
+              <strong>light wrap</strong>.
             </p>
             <a
               className="btn"
@@ -51,8 +51,8 @@ export default function Venues() {
             <p className="detail-when">Reception · Lunch</p>
             <h3>Hillcreek Gardens Tagaytay</h3>
             <p>
-              A garden estate of arched windows, painted murals, and chandeliers, ten minutes from
-              the chapel. Lunch, toasts, and dancing follow the ceremony.
+              A garden estate of arched windows, painted murals, and chandeliers, <strong>ten minutes from
+              the chapel</strong>. Lunch, toasts, and dancing follow the ceremony.
             </p>
             <a
               className="btn"

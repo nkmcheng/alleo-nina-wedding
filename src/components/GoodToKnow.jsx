@@ -6,35 +6,57 @@ import { ANNOUNCED } from '../siteConfig.js'
 /* The practical guide guests ask about: the drive up, the weather, gifts,
    and a short FAQ. Pictures first, one line each. */
 const STEPS = [
-  { title: 'Leave early', text: 'From Manila, allow 2–3 hours on a Saturday.' },
-  { title: 'Head up SLEX', text: 'Then CALAX or the Sta. Rosa exit to Tagaytay.' },
-  { title: 'Chapel on the Hill', text: 'Kindly be seated by 10:30 AM.' },
-  { title: 'Hillcreek Gardens', text: 'Lunch follows right after the ceremony.' },
+  { title: 'Leave early', text: <>From Manila, allow <strong>2–3 hours</strong> on a Saturday.</> },
+  { title: 'Head up SLEX', text: <>Then <strong>CALAX</strong> or the <strong>Sta. Rosa exit</strong> to Tagaytay.</> },
+  { title: 'Chapel on the Hill', text: <>Kindly be seated by <mark>10:30 AM</mark>.</> },
+  { title: 'Hillcreek Gardens', text: <>Lunch follows <strong>right after the ceremony</strong>.</> },
 ]
 
 const FAQ = [
   {
     q: 'Can I bring a plus-one?',
-    a: 'Your invitation reserves a set number of seats for you, and reception seating is limited to those seats. Anyone traveling with you is welcome to enjoy Tagaytay or the hotel. If you need an extra seat, just ask in your RSVP.',
+    a: (
+      <>
+        Your invitation reserves a set number of seats for you, and{' '}
+        <strong>reception seating is limited to those seats</strong>. Anyone traveling with you is
+        welcome to enjoy Tagaytay or the hotel. If you need an extra seat,{' '}
+        <strong>just ask in your RSVP</strong>.
+      </>
+    ),
   },
   {
     q: 'Are kids welcome?',
-    a: 'Yes, little ones are welcome! If they get restless, please step outside with them for a moment so the program can carry on.',
+    a: (
+      <>
+        <strong>Yes, little ones are welcome!</strong> If they get restless, please{' '}
+        <strong>step outside with them for a moment</strong> so the program can carry on.
+      </>
+    ),
   },
   {
     q: 'Can I take photos?',
-    a: 'Of course! Just mind our photographers and try not to block their view or step into the aisle.',
+    a: (
+      <>
+        <strong>Of course!</strong> Just <strong>mind our photographers</strong> and try not to block
+        their view or step into the aisle.
+      </>
+    ),
   },
-  { q: 'Is there a hashtag?', a: '#NewBeginNINSWithLeo' },
+  { q: 'Is there a hashtag?', a: <strong>#NewBeginNINSWithLeo</strong> },
   {
     q: 'When do I RSVP?',
     a: ANNOUNCED.rsvp
-      ? 'By January 6, 2027, using the personal link in your invitation.'
-      : 'Soon! We’re finalizing the details. Your invitation will include your personal RSVP link.',
+      ? <>By <strong>January 6, 2027</strong>, using the personal link in your invitation.</>
+      : <>Soon! We’re finalizing the details. Your invitation will include your <strong>personal RSVP link</strong>.</>,
   },
   {
     q: 'Where can we stay?',
-    a: 'At Hillcreek itself, or a nearby Airbnb. Tagaytay is small, and taxis are easy to find.',
+    a: (
+      <>
+        At <strong>Hillcreek</strong> itself, or a <strong>nearby Airbnb</strong>. Tagaytay is small,
+        and taxis are easy to find.
+      </>
+    ),
   },
 ]
 
@@ -68,23 +90,26 @@ export default function GoodToKnow() {
             <p className="detail-when">The weather</p>
             <h3>Sunny, likely warm</h3>
             <p className="detail-note">
-              Tagaytay is usually cool in February, but this year’s strong El Niño may bring a
-              warmer, sunnier day. Breathable fabrics, and a light wrap for the breezy morning.
+              Tagaytay is usually cool in February, but this year’s strong El Niño may bring a{' '}
+              <strong>warmer, sunnier day</strong>. <strong>Breathable fabrics</strong>, and a light wrap
+              for the breezy morning.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={2}>
             <p className="detail-when">Gifts</p>
             <h3>Your presence is enough</h3>
             <p className="detail-note">
-              Celebrating with you is the greatest gift. Should you wish to bless us further, a
-              monetary gift toward our first home would be received with so much gratitude.
+              <strong>Celebrating with you is the greatest gift.</strong> Should you wish to bless us
+              further, a monetary gift toward our first home would be received with so much
+              gratitude.
             </p>
           </Reveal>
           <Reveal className="detail-card" delay={3}>
             <p className="detail-when">Getting around</p>
             <h3>Easy once you’re up</h3>
             <p className="detail-note">
-              Tagaytay is small, and taxis are easy to find. Both venues are right in town.
+              Tagaytay is small, and <strong>taxis are easy to find</strong>. Both venues are right in
+              town.
             </p>
           </Reveal>
         </div>

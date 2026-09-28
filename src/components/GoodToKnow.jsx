@@ -42,7 +42,15 @@ const FAQ = [
       </>
     ),
   },
-  { q: 'Is there a hashtag?', a: <strong>#NewBeginNINSWithLeo</strong> },
+  {
+    q: 'Is there a hashtag?',
+    a: (
+      <>
+        Use either <strong>#NewBeginNINSWithLeo</strong> or <strong>#HappeNINSWithLeo</strong>. We’d
+        love to see your photos!
+      </>
+    ),
+  },
   {
     q: 'When do I RSVP?',
     a: ANNOUNCED.rsvp

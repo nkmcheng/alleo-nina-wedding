@@ -1194,6 +1194,17 @@ h2 {
 }
 
 /* ---------- Footer ---------- */
+.tag-hashtag {
+  white-space: nowrap;
+}
+@media (max-width: 520px) {
+  .tag-dot {
+    display: none;
+  }
+  .tag-hashtag {
+    display: block;
+  }
+}
 .footer {
   text-align: center;
   padding: 4rem 1.5rem 3rem;
